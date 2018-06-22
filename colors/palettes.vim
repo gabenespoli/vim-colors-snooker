@@ -261,6 +261,12 @@ hi! link matlabCellComment          Title
 hi! link matlabCellCommentIndented  Title
 hi! link matlabDelimiter            Delimiter
 
+" CtrlP {{{2
+hi! link CtrlPMode1                 DiffAdd
+hi! link CtrlPMode2                 StatusLine
+hi! link CtrlPStats                 DiffDelete
+hi! link CtrlPPrtCursor             Cursor
+
 " NERDTree {{{2
 call s:h("NERDTreeExecFile",        {"fg": s:pink})
 call s:h("NERDTreeLinkDir",         {"fg": s:cyan})
