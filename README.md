@@ -1,4 +1,4 @@
-# Vim Solarized Palettes Colourscheme
+# Sumach Colourscheme
 
 A 16-colour palette and vim colourscheme using [Base16](https://github.com/chriskempson/base16).
 
