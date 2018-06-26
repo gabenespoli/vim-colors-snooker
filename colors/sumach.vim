@@ -22,50 +22,47 @@ if ! exists("g:sumach_spell_undercurl")
 endif
 
 " Colors {{{1
-" Undercurl {{{2
+if &background == "dark"
+  let s:bg              = { "gui": "#1c1c1c", "cterm": "0"  }
+  let s:bg_light        = { "gui": "#303030", "cterm": "10" }
+  let s:bg_sel          = { "gui": "#444444", "cterm": "11" }
+  let s:fg_com          = { "gui": "#585858", "cterm": "8"  }
+  let s:fg_dark         = { "gui": "#808080", "cterm": "12" }
+  let s:fg              = { "gui": "#8a8a8a", "cterm": "7"  }
+  let s:fg_light        = { "gui": "#a39e99", "cterm": "13" }
+  let s:fg_bright       = { "gui": "#bcb2a8", "cterm": "15" }
+  let s:red             = { "gui": "#c34b4b", "cterm": "1"  }
+  let s:orange          = { "gui": "#84563f", "cterm": "9"  }
+  let s:yellow          = { "gui": "#c38737", "cterm": "3"  }
+  let s:green           = { "gui": "#738737", "cterm": "2"  }
+  let s:cyan            = { "gui": "#4b875f", "cterm": "6"  }
+  let s:blue            = { "gui": "#378796", "cterm": "4"  }
+  let s:purple          = { "gui": "#875f9b", "cterm": "5"  }
+  let s:pink            = { "gui": "#af6487", "cterm": "14" }
+
+else
+  let s:bg              = { "gui": "#ffffff", "cterm": "0"  }
+  let s:bg_light        = { "gui": "#ebebeb", "cterm": "10" }
+  let s:bg_sel          = { "gui": "#dadada", "cterm": "11" }
+  let s:fg_com          = { "gui": "#8a8a8a", "cterm": "8"  }
+  let s:fg_dark         = { "gui": "#9e9e9e", "cterm": "12" }
+  let s:fg              = { "gui": "#3a3a3a", "cterm": "7"  }
+  let s:fg_light        = { "gui": "#1c1c1c", "cterm": "13" }
+  let s:fg_bright       = { "gui": "#000000", "cterm": "15" }
+  let s:red             = { "gui": "#ff4b4b", "cterm": "1"  }
+  let s:orange          = { "gui": "#c37337", "cterm": "9"  }
+  let s:yellow          = { "gui": "#ff9b37", "cterm": "3"  }
+  let s:green           = { "gui": "#9baf5f", "cterm": "2"  }
+  let s:cyan            = { "gui": "#4baf9b", "cterm": "6"  }
+  let s:blue            = { "gui": "#3787ff", "cterm": "4"  }
+  let s:purple          = { "gui": "#9b73ff", "cterm": "5"  }
+  let s:pink            = { "gui": "#ff739b", "cterm": "14" }
+endif
+
 if g:sumach_spell_undercurl == 1
   let s:sp_un      = 'undercurl'
 else
   let s:sp_un      = 'underline'
-endif
-
-if &background == "dark"
-  let s:base00          = { "gui": "#1c1c1c", "cterm": "0"  }
-  let s:base01          = { "gui": "#262626", "cterm": "10" }
-  let s:base02          = { "gui": "#4e4e4e", "cterm": "11" }
-  let s:base03          = { "gui": "#585858", "cterm": "8"  }
-  let s:base04          = { "gui": "#808080", "cterm": "12" }
-  let s:base05          = { "gui": "#8a8a8a", "cterm": "7"  }
-  let s:base06          = { "gui": "#b2b2b2", "cterm": "13" }
-  let s:base07          = { "gui": "#c6c6c6", "cterm": "15" }
-
-  let s:bg            = s:base00
-  let s:bg_light      = s:base01
-  let s:bg_sel        = s:base02
-  let s:fg_com        = s:base03
-  let s:fg_dark       = s:base04
-  let s:fg            = s:base05
-  let s:fg_light      = s:base06
-  let s:fg_bright     = s:base07
-
-  let s:red             = { "gui": "#d70000", "cterm": "1"  }
-  let s:orange          = { "gui": "#d75f00", "cterm": "9"  }
-  let s:yellow          = { "gui": "#d78700", "cterm": "3"  }
-  let s:green           = { "gui": "#00875f", "cterm": "2"  }
-  let s:cyan            = { "gui": "#008787", "cterm": "6"  }
-  let s:blue            = { "gui": "#0087af", "cterm": "4"  }
-  let s:purple          = { "gui": "#5f5faf", "cterm": "5"  }
-  let s:pink            = { "gui": "#af5f87", "cterm": "14" }
-
-else
-  let s:bg            = s:base07
-  let s:bg_light      = s:base06
-  let s:bg_sel        = s:base05
-  let s:fg_com        = s:base04
-  let s:fg_dark       = s:base03
-  let s:fg            = s:base02
-  let s:fg_light      = s:base01
-  let s:fg_bright     = s:base00
 endif
 
 " shamelessly stolen from hemisu: https://github.com/noahfrederick/vim-hemisu/
