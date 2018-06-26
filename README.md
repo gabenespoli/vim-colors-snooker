@@ -1,14 +1,16 @@
-# Sumach Colourscheme
+# Sumach Colorscheme
 
-A 16-colour palette and vim colourscheme using [Base16](https://github.com/chriskempson/base16), with dark low-contrast and light high-contrast variants.
+A 16-colour palette and vim colorscheme using [Base16](https://github.com/chriskempson/base16), with dark/low-contrast and light/high-contrast variants.
 
 ## Installation
 
+Vim Plug:
 `Plug gabenespoli/vim-colors/sumach`
 
+Apply the colorscheme:
 `colorscheme sumach`
 
-For terminal vim, set your terminal colours to the following values for the dark or light palette.
+For terminal vim, set your terminal colours to the following values for the dark or light palette. If you are using iTerm you can get the .itermcolors file from [this repo](https://github.com/gabenespoli/iterm-colour-palettes).
 
 | Code | Colour         | Scheme Colour      | dark   | light  | Function                     |
 | ---- | -------------- | -----------------  | ------ | ------ | ---------------------------- |
