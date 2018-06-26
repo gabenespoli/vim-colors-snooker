@@ -1,5 +1,5 @@
 " Vim Color File
-" Name:       palettes.vim
+" Name:       sumach.vim
 " Maintainer: github.com/gabenespoli
 " file modified from reedes/vim-colors-pencil
 
@@ -10,28 +10,35 @@ if exists('syntax on')
     syntax reset
 endif
 
-let g:colors_name='palettes'
+let g:colors_name='sumach'
 
 " not all terminals support italics properly.  If yours does, opt-in.
-if ! exists("g:palettes_terminal_italics")
-  let g:palettes_terminal_italics = 0
+if ! exists("g:sumach_terminal_italics")
+  let g:sumach_terminal_italics = 0
 endif
 
-if ! exists("g:palettes_spell_undercurl")
-  let g:palettes_spell_undercurl = 1
+if ! exists("g:sumach_spell_undercurl")
+  let g:sumach_spell_undercurl = 1
 endif
 
 " Colors {{{1
-let s:base00          = { "gui": "#1c1c1c", "cterm": "0"  }
-let s:base01          = { "gui": "#262626", "cterm": "10" }
-let s:base02          = { "gui": "#4e4e4e", "cterm": "11" }
-let s:base03          = { "gui": "#585858", "cterm": "8"  }
-let s:base04          = { "gui": "#808080", "cterm": "12" }
-let s:base05          = { "gui": "#8a8a8a", "cterm": "7"  }
-let s:base06          = { "gui": "#b2b2b2", "cterm": "13" }
-let s:base07          = { "gui": "#c6c6c6", "cterm": "15" }
+" Undercurl {{{2
+if g:sumach_spell_undercurl == 1
+  let s:sp_un      = 'undercurl'
+else
+  let s:sp_un      = 'underline'
+endif
 
 if &background == "dark"
+  let s:base00          = { "gui": "#1c1c1c", "cterm": "0"  }
+  let s:base01          = { "gui": "#262626", "cterm": "10" }
+  let s:base02          = { "gui": "#4e4e4e", "cterm": "11" }
+  let s:base03          = { "gui": "#585858", "cterm": "8"  }
+  let s:base04          = { "gui": "#808080", "cterm": "12" }
+  let s:base05          = { "gui": "#8a8a8a", "cterm": "7"  }
+  let s:base06          = { "gui": "#b2b2b2", "cterm": "13" }
+  let s:base07          = { "gui": "#c6c6c6", "cterm": "15" }
+
   let s:bg            = s:base00
   let s:bg_light      = s:base01
   let s:bg_sel        = s:base02
@@ -40,6 +47,16 @@ if &background == "dark"
   let s:fg            = s:base05
   let s:fg_light      = s:base06
   let s:fg_bright     = s:base07
+
+  let s:red             = { "gui": "#d70000", "cterm": "1"  }
+  let s:orange          = { "gui": "#d75f00", "cterm": "9"  }
+  let s:yellow          = { "gui": "#d78700", "cterm": "3"  }
+  let s:green           = { "gui": "#00875f", "cterm": "2"  }
+  let s:cyan            = { "gui": "#008787", "cterm": "6"  }
+  let s:blue            = { "gui": "#0087af", "cterm": "4"  }
+  let s:purple          = { "gui": "#5f5faf", "cterm": "5"  }
+  let s:pink            = { "gui": "#af5f87", "cterm": "14" }
+
 else
   let s:bg            = s:base07
   let s:bg_light      = s:base06
@@ -51,25 +68,10 @@ else
   let s:fg_bright     = s:base00
 endif
 
-let s:red             = { "gui": "#d70000", "cterm": "1"  }
-let s:orange          = { "gui": "#d75f00", "cterm": "9"  }
-let s:yellow          = { "gui": "#d78700", "cterm": "3"  }
-let s:green           = { "gui": "#00875f", "cterm": "2"  }
-let s:cyan            = { "gui": "#008787", "cterm": "6"  }
-let s:blue            = { "gui": "#0087af", "cterm": "4"  }
-let s:purple          = { "gui": "#5f5faf", "cterm": "5"  }
-let s:pink            = { "gui": "#af5f87", "cterm": "14" }
-
-if g:palettes_spell_undercurl == 1
-  let s:sp_un      = 'undercurl'
-else
-  let s:sp_un      = 'underline'
-endif
-
 " shamelessly stolen from hemisu: https://github.com/noahfrederick/vim-hemisu/
 function! s:h(group, style)
   " Not all terminals support italics properly. If yours does, opt-in.
-  if g:palettes_terminal_italics == 0 && has_key(a:style, "cterm") && a:style["cterm"] == "italic"
+  if g:sumach_terminal_italics == 0 && has_key(a:style, "cterm") && a:style["cterm"] == "italic"
     unlet a:style.cterm
   endif
   execute "highlight" a:group
@@ -84,6 +86,8 @@ endfunction
 
 " Main Groups {{{1
 " (see `:h w18`)
+
+" TODO: make switch for my (solarized?) and base16's scheme
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:fg})
 call s:h("Cursor",        {"bg": s:fg, "fg": s:bg })
@@ -148,12 +152,12 @@ call s:h("StatusLine",    {"fg": s:fg_light, "bg": s:bg_light})
 call s:h("Conceal",       {"fg": s:fg})
 call s:h("StatusLineNC",  {"bg": s:bg_light, "fg": s:fg_com})
 call s:h("VertSplit",     {"bg": s:bg, "fg": s:bg})
-call s:h("Title",         {"fg": s:fg_bright, "bg": s:bg_light, "gui": "bold", "cterm": "bold"})
-call s:h("Visual",        {"bg": s:bg_sel, "fg": s:fg})
+call s:h("Title",         {"fg": s:fg_bright, "bg": s:bg, "gui": "bold", "cterm": "bold"})
+call s:h("Visual",        {"bg": s:bg_sel, "fg": s:fg_light})
 call s:h("VisualNOS",     {"bg": s:bg_light, "fg": s:fg})
 call s:h("WarningMsg",    {"fg": s:bg, "bg": s:orange})
 call s:h("WildMenu",      {"fg": s:bg_light, "bg": s:fg_bright})
-call s:h("Folded",        {"fg": s:fg, "bg": s:bg_light})
+call s:h("Folded",        {"fg": s:fg, "bg": s:bg_light, "gui": "italic", "cterm": "italic"})
 call s:h("FoldColumn",    {"fg": s:fg})
 call s:h("DiffAdd",       {"bg": s:bg_light, "fg": s:green})
 call s:h("DiffDelete",    {"bg": s:bg_light, "fg": s:red})
@@ -202,14 +206,13 @@ call s:h("GitGutterAdd",            {"fg": s:green})
 call s:h("GitGutterChange",         {"fg": s:yellow})
 call s:h("GitGutterDelete",         {"fg": s:red})
 call s:h("GitGutterChangeDelete",   {"fg": s:orange})
+hi! link diffAdded GitGutterAdd
+hi! link diffRemoved GitGutterDelete
 
 " DiffChar {{{2
-call s:h("_DiffAddPos",             {"fg": s:green})
-call s:h("_DiffPair",               {"fg": s:yellow})
-call s:h("_DiffDelPos",             {"fg": s:red})
-hi! link dcDiffDelPos               _DiffDelPos
-hi! link dcDiffAddPos               _DiffAddPos
-hi! link dcDiffPair                 _DiffPair
+hi! link dcDiffDelPos               Normal
+hi! link dcDiffAddPos               DiffDelete
+hi! link dcDiffPair                 DiffText
 hi! link dcDiffChange               Normal
 hi! link dcDiffDelStr               Normal
 hi! link dcDiffText                 Normal
@@ -262,10 +265,11 @@ hi! link matlabCellCommentIndented  Title
 hi! link matlabDelimiter            Delimiter
 
 " CtrlP {{{2
+hi! link CtrlPMatch                 IncSearch
+hi! link CtrlPPrtCursor             Cursor
 hi! link CtrlPMode1                 DiffAdd
 hi! link CtrlPMode2                 StatusLine
 hi! link CtrlPStats                 DiffDelete
-hi! link CtrlPPrtCursor             Cursor
 
 " NERDTree {{{2
 call s:h("NERDTreeExecFile",        {"fg": s:pink})
