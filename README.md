@@ -1,6 +1,6 @@
 # Sumach Colourscheme
 
-A 16-colour palette and vim colourscheme using [Base16](https://github.com/chriskempson/base16).
+A 16-colour palette and vim colourscheme using [Base16](https://github.com/chriskempson/base16), with dark low-contrast and light high-contrast variants.
 
 ## Installation
 
