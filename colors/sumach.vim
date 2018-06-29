@@ -32,7 +32,7 @@ if &background == "dark"
   let s:fg_light        = { "gui": "#a39e99", "cterm": "13" }
   let s:fg_bright       = { "gui": "#bcb2a8", "cterm": "15" }
   let s:red             = { "gui": "#c34b4b", "cterm": "1"  }
-  let s:orange          = { "gui": "#84563f", "cterm": "9"  }
+  let s:brown          = { "gui": "#84563f", "cterm": "9"  }
   let s:yellow          = { "gui": "#c38737", "cterm": "3"  }
   let s:green           = { "gui": "#738737", "cterm": "2"  }
   let s:cyan            = { "gui": "#4b875f", "cterm": "6"  }
@@ -50,7 +50,7 @@ else
   let s:fg_light        = { "gui": "#1c1c1c", "cterm": "13" }
   let s:fg_bright       = { "gui": "#000000", "cterm": "15" }
   let s:red             = { "gui": "#ff4b4b", "cterm": "1"  }
-  let s:orange          = { "gui": "#c37337", "cterm": "9"  }
+  let s:brown          = { "gui": "#c37337", "cterm": "9"  }
   let s:yellow          = { "gui": "#ff9b37", "cterm": "3"  }
   let s:green           = { "gui": "#9baf5f", "cterm": "2"  }
   let s:cyan            = { "gui": "#4baf9b", "cterm": "6"  }
@@ -119,7 +119,7 @@ hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
 
-call s:h("Special",       {"fg": s:orange})
+call s:h("Special",       {"fg": s:brown})
 hi! link SpecialChar      Special
 hi! link Tag              Special
 hi! link Delimiter        Special
@@ -138,7 +138,7 @@ call s:h("SpecialKey",    {"fg": s:bg_light, "gui": "bold", "cterm": "bold"})
 call s:h("NonText",       {"fg": s:bg})
 call s:h("Directory",     {"fg": s:blue})
 call s:h("ErrorMsg",      {"fg": s:bg, "bg": s:red})
-call s:h("IncSearch",     {"bg": s:orange, "fg": s:bg})
+call s:h("IncSearch",     {"bg": s:brown, "fg": s:bg})
 call s:h("Search",        {"bg": s:yellow, "fg": s:bg})
 call s:h("MoreMsg",       {"fg": s:fg_com})
 hi! link ModeMsg MoreMsg
@@ -152,7 +152,7 @@ call s:h("VertSplit",     {"bg": s:bg, "fg": s:bg})
 call s:h("Title",         {"fg": s:fg_bright, "bg": s:bg, "gui": "bold", "cterm": "bold"})
 call s:h("Visual",        {"bg": s:bg_sel, "fg": s:fg_light})
 call s:h("VisualNOS",     {"bg": s:bg_light, "fg": s:fg})
-call s:h("WarningMsg",    {"fg": s:bg, "bg": s:orange})
+call s:h("WarningMsg",    {"fg": s:bg, "bg": s:brown})
 call s:h("WildMenu",      {"fg": s:bg_light, "bg": s:fg_bright})
 call s:h("Folded",        {"fg": s:fg, "bg": s:bg_light, "gui": "italic", "cterm": "italic"})
 call s:h("FoldColumn",    {"fg": s:fg})
@@ -202,7 +202,7 @@ hi! link EndOfBuffer NonText
 call s:h("GitGutterAdd",            {"fg": s:green})
 call s:h("GitGutterChange",         {"fg": s:yellow})
 call s:h("GitGutterDelete",         {"fg": s:red})
-call s:h("GitGutterChangeDelete",   {"fg": s:orange})
+call s:h("GitGutterChangeDelete",   {"fg": s:brown})
 hi! link diffAdded GitGutterAdd
 hi! link diffRemoved GitGutterDelete
 
