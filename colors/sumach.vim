@@ -214,34 +214,45 @@ hi! link dcDiffChange               Normal
 hi! link dcDiffDelStr               Normal
 hi! link dcDiffText                 Normal
 
+" Markdown {{{2
+hi! link markdownHeadingDelimiter   Title
+call s:h("markdownItalic",          {"fg": s:fg_light, "gui": "italic", "cterm": "italic"})
+call s:h("markdownBold",            {"fg": s:fg_light, "gui": "bold", "cterm": "bold"})
+call s:h("markdownBoldItalic",      {"fg": s:fg_light, "gui": "bold,italic", "cterm": "bold,italic"})
+hi! link markdownItalicDelimiter    Comment
+hi! link markdownBoldDelimiter      Comment
+hi! link markdownBoldItalicDelimiter Comment
+hi! link markdownLinkDelimiter      Comment
+hi! link markdownLinkTextDelimiter  Comment
+call s:h("markdownLinkText",        {"fg": s:purple, "gui": "italic", "cterm": "italic"})
+call s:h("markdownUrl",             {"fg": s:cyan, "gui": "italic", "cterm": "italic"})
+" hi! link markdownUrlTitle           pandocLinkTip
+hi! link markdownUrlTitleDelimiter  markdownUrlTitle
+
 " Pandoc Markdown {{{2
-hi! link pandocAtxStart             Title
-call s:h("pandocEmphasis",          {"fg": s:fg_light, "gui": "italic", "cterm": "italic"})
-call s:h("pandocStrong",            {"fg": s:fg_light, "gui": "bold", "cterm": "bold"})
-call s:h("pandocStrongEmphasis",    {"fg": s:fg_light, "gui": "bold,italic", "cterm": "bold,italic"})
-hi! link pandocEmphasisInStrong     pandocStrongEmphasis
+hi! link pandocAtxStart             markdownHeadingDelimiter
+hi! link pandocEmphasis             markdownItalic
+hi! link pandocStrong               markdownBold
+hi! link pandocStrongEmphasis       markdownBoldItalic
+hi! link pandocEmphasisInStrong     markdownBoldItalic
 
 hi! link pandocOperator             Comment
-hi! link pandocCiteLocator          Delimiter
-hi! link pandocImageIcon            Delimiter
+hi! link pandocReferenceLabel       markdownLinkText
+hi! link pandocReferenceURL         markdownUrl
+hi! link pandocLinkTip              markdownUrlTitle
 
-call s:h("pandocReferenceLabel",    {"fg": s:purple, "gui": "italic", "cterm": "italic"})
-call s:h("pandocReferenceURL",      {"fg": s:cyan, "gui": "italic", "cterm": "italic"})
-call s:h("pandocNoFormatted",       {"fg": s:blue, "gui": "italic", "cterm": "italic"})
+hi! link pandocImageIcon            Delimiter
+hi! link pandocCiteLocator          Delimiter
+hi! link pandocFootnoteIDHead       Delimiter
+hi! link pandocFootnoteIDTail       Delimiter
 
 call s:h("pandocCiteKey",           {"fg": s:blue, "gui": "italic", "cterm": "italic"})
 hi! link pandocCiteAnchor           pandocCiteKey
 hi! link pandocPCite                pandocCiteKey
 hi! link pandocICite                pandocCiteKey
-
-" Markdown {{{2
-hi! link markdownHeadingDelimiter   Title
-hi! link markdownItalic             pandocEmphasis
-hi! link markdownBold               pandocStrong
-hi! link markdownLinkDelimiter      pandocOperator
-hi! link markdownLinkTextDelimiter  pandocOperator
-hi! link markdownLinkText           pandocReferenceLabel
-hi! link markdownUrl                pandocReferenceURL
+hi! link pandocFootnoteID           pandocCiteKey
+" code
+hi! link pandocNoFormatted          pandocCiteKey
 
 " Critic Markup {{{2
 if exists("g:CriticHC") && g:CriticHC == 1
