@@ -245,10 +245,10 @@ hi! link markdownUrl                pandocReferenceURL
 
 " Critic Markup {{{2
 if exists("g:CriticHC") && g:CriticHC == 1
-  call s:h("criticAdd",             {"bg": s:green,  "fg",: s:bg})
-  call s:h("criticDel",             {"bg": s:red,    "fg",: s:bg})
-  call s:h("criticMeta",            {"bg": s:pink,   "fg",: s:bg})
-  call s:h("criticHighlighter",     {"bg": s:yellow, "fg",: s:bg})
+  call s:h("criticAdd",             {"bg": s:green,  "fg": s:bg})
+  call s:h("criticDel",             {"bg": s:red,    "fg": s:bg})
+  call s:h("criticMeta",            {"bg": s:pink,   "fg": s:bg})
+  call s:h("criticHighlighter",     {"bg": s:yellow, "fg": s:bg})
 else
   call s:h("criticAdd",             {"fg": s:green})
   call s:h("criticDel",             {"fg": s:red})
