@@ -281,3 +281,9 @@ hi! link ALEWarningSign             WarningMsg
 " Tagbar {{{2
 hi! link TagbarScope                Normal
 hi! link TagbarType                 Comment
+
+" Nvim-R {{{2
+" for some reason r prints messages in bold by default
+" so linking these to errormsg and warning msg looks bad
+call s:h("routError",     {"fg": s:fg, "bg": s:red})
+call s:h("routWarn",      {"fg": s:fg, "bg": s:brown})
