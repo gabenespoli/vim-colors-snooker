@@ -138,7 +138,7 @@ call s:h("SpecialKey",    {"fg": s:bg_light, "gui": "bold", "cterm": "bold"})
 call s:h("NonText",       {"fg": s:bg})
 call s:h("Directory",     {"fg": s:blue})
 call s:h("ErrorMsg",      {"fg": s:bg, "bg": s:red})
-call s:h("IncSearch",     {"bg": s:brown, "fg": s:bg})
+call s:h("IncSearch",     {"bg": s:yellow, "fg": s:bg})
 call s:h("Search",        {"bg": s:yellow, "fg": s:bg})
 call s:h("MoreMsg",       {"fg": s:fg_com})
 hi! link ModeMsg MoreMsg
