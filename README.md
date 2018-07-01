@@ -16,18 +16,18 @@ For terminal vim, set your terminal colours to the following values for the dark
 | ---- | -------------- | -----------------  | ------ | ------ | ---------------------------- |
 | 0    | black          | background         | 1c1c1c | ffffff |                              |
 | 1    | red            | red                | c34b4b | ff4b4b | errors                       |
-| 2    | green          | green              | 738737 | 9baf5f | statement, keyword, operator |
-| 3    | yellow         | yellow             | c38737 | ff9b37 | type                         |
-| 4    | blue           | blue               | 378796 | 3787ff | identifier, function         |
-| 5    | magenta        | purple             | 875f9b | 9b73ff | preproc                      |
-| 6    | cyan           | cyan               | 4b875f | 4baf9b | constant, string             |
-| 7    | white          | foreground         | 8a8a8a | 3a3a3a | foreground                   |
+| 2    | green          | green              | 738737 | 879b37 | statement, keyword, operator |
+| 3    | yellow         | yellow             | c38737 | eb8700 | type                         |
+| 4    | blue           | blue               | 37879b | 3773ff | identifier, function         |
+| 5    | magenta        | purple             | 875f9b | 9b5fff | preproc                      |
+| 6    | cyan           | cyan               | 4b875f | 37915f | constant, string             |
+| 7    | white          | foreground         | 808080 | 3a3a3a |                              |
 | 8    | bright black   | darker foreground  | 585858 | 8a8a8a | comments                     |
-| 9    | bright red     | brown              | 84563f | c37337 | special, delimiter (brown)   |
-| 10   | bright green   | light background   | 303030 | ebebeb | status bars                  |
-| 11   | bright yellow  | lighter background | 444444 | dadada | selection background         |
-| 12   | bright blue    | dark foreground    | 808080 | 9e9e9e |                              |
-| 13   | bright magenta | light foreground   | a39e99 | 1c1c1c |                              |
-| 14   | bright cyan    | pink               | af6487 | ff739b | underlined, todo (pink)      |
+| 9    | bright red     | brown              | 84563f | 9b5f00 | special, delimiter           |
+| 10   | bright green   | light background   | 2b2b2b | ebebeb | status bars                  |
+| 11   | bright yellow  | lighter background | 3a3a3a | dadada | selection background         |
+| 12   | bright blue    | dark foreground    | 767676 | 9e9e9e |                              |
+| 13   | bright magenta | light foreground   | a39e99 | 1c1c1c | selection foreground, bold   |
+| 14   | bright cyan    | pink               | af6487 | ff739b | underlined, todo             |
 | 15   | bright white   | bright foreground  | bcb2a8 | 000000 | titles                       |
 
