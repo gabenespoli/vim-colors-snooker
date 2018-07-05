@@ -23,7 +23,7 @@ For terminal vim, set your terminal colours to the following values for the dark
 | 6    | cyan           | cyan               | 4b875f | 37915f | constant, string             |
 | 7    | white          | foreground         | 808080 | 3a3a3a |                              |
 | 8    | bright black   | darker foreground  | 585858 | 8a8a8a | comments                     |
-| 9    | bright red     | brown              | 84563f | 9b5f00 | special, delimiter           |
+| 9    | bright red     | orange/brown       | af5f37 | 9b5f00 | special, delimiter           |
 | 10   | bright green   | light background   | 2b2b2b | ebebeb | status bars                  |
 | 11   | bright yellow  | lighter background | 3a3a3a | dadada | selection background         |
 | 12   | bright blue    | dark foreground    | 767676 | 9e9e9e |                              |
