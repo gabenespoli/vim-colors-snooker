@@ -126,9 +126,9 @@ hi! link Delimiter        Special
 hi! link SpecialComment   Special
 hi! link Debug            Special
 
-call s:h("Underlined",    {"fg": s:pink, "gui": "underline", "cterm": "underline"          })
-call s:h("Ignore",        {"fg": s:bg                                                      })
-call s:h("Error",         {"fg": s:red                                                     })
+call s:h("Underlined",    {"fg": s:pink, "gui": "underline", "cterm": "underline"})
+call s:h("Ignore",        {"fg": s:bg})
+call s:h("Error",         {"fg": s:red})
 call s:h("Todo",          {"fg": s:pink, "bg": s:bg})
 
 " Extra Groups {{{1
