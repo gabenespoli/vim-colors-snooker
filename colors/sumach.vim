@@ -273,11 +273,21 @@ hi! link matlabCellCommentIndented  Title
 hi! link matlabDelimiter            Delimiter
 
 " CtrlP {{{2
-hi! link CtrlPMatch                 IncSearch
+call s:h("CtrlPMatch",              {"fg": s:yellow})
+call s:h("CtrlPPrtBase",            {"fg": s:fg_bright, "bg": s:bg})
 hi! link CtrlPPrtCursor             Cursor
-hi! link CtrlPMode1                 DiffAdd
+hi! link CtrlPBufferNr              Constant
+hi! link CtrlPBufferInd             Type
+hi! link CtrlPBufferHid             Normal
+hi! link CtrlPBufferVis             Comment
+hi! link CtrlPBufferCur             Question
+hi! link CtrlPBufferHidMod          CtrlPBufferHid
+hi! link CtrlPBufferVisMod          CtrlPBufferVis
+hi! link CtrlPBufferCurMod          CtrlPBufferCur
+hi! link CtrlPBufferPath            Comment
+call s:h("CtrlPMode1",              {"fg": s:green, "bg": s:bg_light})
 hi! link CtrlPMode2                 StatusLine
-hi! link CtrlPStats                 DiffDelete
+call s:h("CtrlPStats",              {"fg": s:red, "bg": s:bg_light})
 
 " NERDTree {{{2
 call s:h("NERDTreeExecFile",        {"fg": s:pink})
