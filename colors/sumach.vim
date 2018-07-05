@@ -267,10 +267,20 @@ else
   call s:h("criticHighlighter",     {"fg": s:yellow})
 endif
 
-" Matlab {{{2
+" Octave/Matlab {{{2
+hi! link octaveDelimiter            Delimiter
+hi! link octaveSemicolon            Normal
+hi! link octaveBlockComment         Title
+hi! link octaveVariable             Identifier
+
+" optional octave highlighting
+hi! link octaveOperator             Operator
+hi! link octaveIdentifier           Identifier
+hi! link octaveTab                  Error
+
+hi! link matlabDelimiter            Delimiter
 hi! link matlabCellComment          Title
 hi! link matlabCellCommentIndented  Title
-hi! link matlabDelimiter            Delimiter
 
 " CtrlP {{{2
 call s:h("CtrlPMatch",              {"fg": s:yellow})
