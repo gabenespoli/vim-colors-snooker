@@ -10,7 +10,7 @@ Vim Plug:
 Apply the colorscheme:
 `colorscheme sumach`
 
-For terminal vim, set your terminal colours to the following values for the dark or light palette. If you are using iTerm you can get the .itermcolors file from [this repo](https://github.com/gabenespoli/iterm-colour-palettes).
+For terminal vim, set your terminal colours to the following values for the dark or light palette. If you are using iTerm you can get the .itermcolors file from [this repo](https://github.com/gabenespoli/iterm-color-palettes).
 
 | Code | Colour         | Scheme Colour      | dark   | light  | Function                     |
 | ---- | -------------- | -----------------  | ------ | ------ | ---------------------------- |
