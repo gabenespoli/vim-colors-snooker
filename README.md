@@ -5,7 +5,7 @@ A 16-colour palette and vim colorscheme using [Base16](https://github.com/chrisk
 ## Installation
 
 Vim Plug:
-`Plug gabenespoli/vim-colors/sumach`
+`Plug gabenespoli/vim-colors-sumach`
 
 Apply the colorscheme:
 `colorscheme sumach`
