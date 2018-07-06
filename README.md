@@ -4,11 +4,15 @@ A 16-colour palette and vim colorscheme using [Base16](https://github.com/chrisk
 
 ## Installation
 
+### in Vim
+
 Vim Plug:
 `Plug gabenespoli/vim-colors-sumach`
 
 Apply the colorscheme:
 `colorscheme sumach`
+
+### in your terminal
 
 For terminal vim, set your terminal colours to the following values for the dark or light palette. If you are using iTerm you can get the .itermcolors file from [this repo](https://github.com/gabenespoli/iterm-color-palettes).
 
