@@ -292,6 +292,11 @@ call s:h('CtrlPMode1',              {'fg': s:green, 'bg': s:bg_light})
 hi! link CtrlPMode2                 StatusLine
 call s:h('CtrlPStats',              {'fg': s:red, 'bg': s:bg_light})
 
+" netrw {{{2
+call s:h('netrwClassify',           {'fg': s:fg_com})
+call s:h('netrwSymLink',            {'fg': s:cyan})
+call s:h('netrwExe',                {'fg': s:pink})
+
 " NERDTree {{{2
 call s:h('NERDTreeExecFile',        {'fg': s:pink})
 hi! link NERDTreeLinkFile           netrwSymLink
