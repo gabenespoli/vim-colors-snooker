@@ -86,6 +86,8 @@ endfunction
 " (see `:h w18`)
 
 call s:h('Normal',        {'bg': s:bg, 'fg': s:fg})
+call s:h('Cursor',        {'bg': s:fg, 'fg': s:bg })
+call s:h('Comment',       {'fg': s:fg_com, 'gui': 'italic', 'cterm': 'italic'})
 
 call s:h('Constant',      {'fg': s:cyan})
 hi! link String           Constant
