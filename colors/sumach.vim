@@ -192,23 +192,7 @@ hi! link TermCursor Cursor
 hi! link TermCursorNC Cursor
 hi! link EndOfBuffer NonText
 
-" Plugin Groups {{{1
-" GitGutter {{{2
-call s:h('GitGutterAdd',            {'fg': s:green})
-call s:h('GitGutterChange',         {'fg': s:yellow})
-call s:h('GitGutterDelete',         {'fg': s:red})
-call s:h('GitGutterChangeDelete',   {'fg': s:brown})
-hi! link diffAdded GitGutterAdd
-hi! link diffRemoved GitGutterDelete
-
-" DiffChar {{{2
-hi! link dcDiffDelPos               Normal
-hi! link dcDiffAddPos               DiffDelete
-hi! link dcDiffPair                 DiffText
-hi! link dcDiffChange               Normal
-hi! link dcDiffDelStr               Normal
-hi! link dcDiffText                 Normal
-
+" Syntaxes {{{1
 " Markdown {{{2
 hi! link markdownHeadingDelimiter   Title
 call s:h('markdownItalic',          {'fg': s:fg_light, 'gui': 'italic', 'cterm': 'italic'})
@@ -270,10 +254,26 @@ hi! link octaveVariable             Identifier
 hi! link octaveOperator             Operator
 hi! link octaveIdentifier           Identifier
 hi! link octaveTab                  Error
-
 hi! link matlabDelimiter            Delimiter
 hi! link matlabCellComment          Title
 hi! link matlabCellCommentIndented  Title
+
+" Plugin Groups {{{1
+" GitGutter {{{2
+call s:h('GitGutterAdd',            {'fg': s:green})
+call s:h('GitGutterChange',         {'fg': s:yellow})
+call s:h('GitGutterDelete',         {'fg': s:red})
+call s:h('GitGutterChangeDelete',   {'fg': s:brown})
+hi! link diffAdded GitGutterAdd
+hi! link diffRemoved GitGutterDelete
+
+" DiffChar {{{2
+hi! link dcDiffDelPos               Normal
+hi! link dcDiffAddPos               DiffDelete
+hi! link dcDiffPair                 DiffText
+hi! link dcDiffChange               Normal
+hi! link dcDiffDelStr               Normal
+hi! link dcDiffText                 Normal
 
 " CtrlP {{{2
 call s:h('CtrlPMatch',              {'fg': s:yellow})
