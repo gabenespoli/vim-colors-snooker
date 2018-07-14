@@ -20,10 +20,10 @@ For terminal vim, set your terminal colours to the following values for the dark
 | ---- | -------------- | -----------------  | ------ | ------ | ---------------------------- |
 | 0    | black          | background         | 1c1c1c | ffffff |                              |
 | 1    | red            | red                | c34b4b | ff4b4b | errors                       |
-| 2    | green          | green              | 738737 | 879b37 | statement, keyword, operator |
+| 2    | green          | green              | 7d7d37 | 879b37 | statement, keyword, operator |
 | 3    | yellow         | yellow             | c38737 | eb8700 | type                         |
 | 4    | blue           | blue               | 37879b | 3773ff | identifier, function         |
-| 5    | magenta        | purple             | 875f9b | 9b5fff | preproc                      |
+| 5    | magenta        | purple             | 786ea7 | 9b5fff | preproc                      |
 | 6    | cyan           | cyan               | 4b875f | 37915f | constant, string             |
 | 7    | white          | foreground         | 808080 | 3a3a3a |                              |
 | 8    | bright black   | darker foreground  | 585858 | 8a8a8a | comments                     |
