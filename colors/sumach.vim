@@ -1,7 +1,9 @@
 " Vim Color File
 " Name:       sumach.vim
-" Maintainer: github.com/gabenespoli
+" Maintainer: Gabe Nespoli (github.com/gabenespoli)
 " file modified from reedes/vim-colors-pencil
+" scheme inspired by altercation/vim-colors-solarized
+" palette inspired by morhetz/gruvbox
 
 " Setup {{{1
 hi clear
