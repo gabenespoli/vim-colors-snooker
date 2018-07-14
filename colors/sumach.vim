@@ -267,8 +267,6 @@ hi! link octaveDelimiter            Delimiter
 hi! link octaveSemicolon            Normal
 hi! link octaveBlockComment         Title
 hi! link octaveVariable             Identifier
-
-" optional octave highlighting
 hi! link octaveOperator             Operator
 hi! link octaveIdentifier           Identifier
 hi! link octaveTab                  Error
