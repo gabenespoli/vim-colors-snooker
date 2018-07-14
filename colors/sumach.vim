@@ -258,6 +258,9 @@ hi! link matlabDelimiter            Delimiter
 hi! link matlabCellComment          Title
 hi! link matlabCellCommentIndented  Title
 
+" vim {{{2
+call s:h('vimGroup',                {'fg': s:blue})
+
 " Plugin Groups {{{1
 " GitGutter {{{2
 call s:h('GitGutterAdd',            {'fg': s:green})
