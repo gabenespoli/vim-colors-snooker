@@ -260,6 +260,7 @@ hi! link matlabCellCommentIndented  Title
 
 " vim {{{2
 call s:h('vimGroup',                {'fg': s:blue})
+hi! link vimBracket                 Special
 
 " Plugin Groups {{{1
 " GitGutter {{{2
