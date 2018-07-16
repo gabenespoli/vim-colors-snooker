@@ -263,13 +263,19 @@ call s:h('vimGroup',                {'fg': s:blue})
 hi! link vimBracket                 Special
 
 " Plugin Groups {{{1
-" GitGutter {{{2
+" GitGutter / Signify {{{2
 call s:h('GitGutterAdd',            {'fg': s:green})
 call s:h('GitGutterChange',         {'fg': s:yellow})
 call s:h('GitGutterDelete',         {'fg': s:red})
 call s:h('GitGutterChangeDelete',   {'fg': s:brown})
-hi! link diffAdded GitGutterAdd
-hi! link diffRemoved GitGutterDelete
+
+hi! link SignifySignAdd             GitGutterAdd
+hi! link SignifySignChange          GitGutterChange
+hi! link SignifySignDelete          GitGutterDelete
+hi! link SignifySignChangeDelete    GitGutterChangeDelete
+
+hi! link diffAdded                  GitGutterAdd
+hi! link diffRemoved                GitGutterDelete
 
 " DiffChar {{{2
 hi! link dcDiffDelPos               Normal
