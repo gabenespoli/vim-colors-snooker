@@ -134,7 +134,13 @@ call s:h('Todo',          {'fg': s:pink, 'bg': s:bg})
 " ordered according to `:help hitest.vim`
 
 call s:h('SpecialKey',    {'fg': s:fg_dark})
-call s:h('NonText',       {'fg': s:bg})
+if has('nvim')
+  call s:h('NonText',     {'fg': s:pink, 'gui': 'bold', 'cterm': 'bold'})
+  call s:h('Whitespace',  {'fg': s:bg_light})
+  call s:h('EndOfBuffer', {'fg': s:bg})
+else
+  call s:h('NonText',     {'fg': s:bg_light})
+endif
 call s:h('Directory',     {'fg': s:blue})
 call s:h('ErrorMsg',      {'fg': s:bg, 'bg': s:red})
 call s:h('IncSearch',     {'bg': s:yellow, 'fg': s:bg})
