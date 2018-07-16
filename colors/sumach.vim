@@ -194,9 +194,10 @@ call s:h('MatchParen',    {'bg': s:bg_light, 'fg': s:fg})
 call s:h('qfLineNr',      {'fg': s:fg_dark})
 
 " nvim-only groups {{{2
-hi! link TermCursor Cursor
-hi! link TermCursorNC Cursor
-hi! link EndOfBuffer NonText
+if has('nvim')
+  hi! link TermCursor     Cursor
+  hi! link TermCursorNC   Cursor
+endif
 
 " Syntaxes {{{1
 " Markdown {{{2
