@@ -121,7 +121,7 @@ hi! link Typedef          Type
 call s:h('Special',       {'fg': s:brown})
 hi! link SpecialChar      Special
 hi! link Tag              Special
-hi! link Delimiter        Special
+call s:h('Delimiter',     {'fg': s:fg_com})
 hi! link SpecialComment   Special
 hi! link Debug            Special
 
