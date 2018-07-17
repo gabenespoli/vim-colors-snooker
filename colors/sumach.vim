@@ -22,6 +22,10 @@ if !exists('g:sumach_spell_undercurl')
   let g:sumach_spell_undercurl = 1
 endif
 
+if !exists('g:sumach_high_contrast')
+  let g:sumach_high_contrast = 1
+endif
+
 " Colors {{{1
 if &background ==? 'dark'
   let s:bg              = { 'gui': '#1c1c1c', 'cterm': '0'  }
@@ -147,6 +151,7 @@ call s:h('IncSearch',     {'bg': s:yellow, 'fg': s:bg})
 call s:h('Search',        {'bg': s:yellow, 'fg': s:bg})
 call s:h('MoreMsg',       {'fg': s:fg_com})
 hi! link ModeMsg MoreMsg
+
 call s:h('LineNr',        {'fg': s:fg_com})
 call s:h('CursorLineNr',  {'fg': s:fg_dark})
 call s:h('Question',      {'fg': s:red})
@@ -161,11 +166,19 @@ call s:h('WarningMsg',    {'fg': s:bg, 'bg': s:brown})
 call s:h('WildMenu',      {'fg': s:bg_light, 'bg': s:fg_bright})
 call s:h('Folded',        {'fg': s:fg, 'bg': s:bg_light, 'gui': 'italic', 'cterm': 'italic'})
 call s:h('FoldColumn',    {'fg': s:fg})
-call s:h('DiffAdd',       {'bg': s:bg_light, 'fg': s:green})
-call s:h('DiffDelete',    {'bg': s:bg_light, 'fg': s:red})
-call s:h('DiffChange',    {'bg': s:bg,        'fg': s:fg})
-call s:h('DiffText',      {'bg': s:bg_light, 'fg': s:yellow})
 call s:h('SignColumn',    {'fg': s:fg})
+
+if g:sumach_high_contrast
+  call s:h('DiffAdd',       {'fg': s:green,  'gui': 'reverse', 'cterm': 'reverse'})
+  call s:h('DiffDelete',    {'fg': s:red,    'gui': 'reverse', 'cterm': 'reverse'})
+  call s:h('DiffChange',    {'fg': s:fg})
+  call s:h('DiffText',      {'fg': s:yellow, 'gui': 'reverse', 'cterm': 'reverse'})
+else
+  call s:h('DiffAdd',       {'fg': s:green,  'gui': 'none', 'cterm': 'none'})
+  call s:h('DiffDelete',    {'fg': s:red,    'gui': 'none', 'cterm': 'none'})
+  call s:h('DiffChange',    {'fg': s:fg})
+  call s:h('DiffText',      {'fg': s:yellow, 'gui': 'none', 'cterm': 'none'})
+endif
 
 if has('gui_running')
   call s:h('SpellBad',    {'gui': s:sp_un, 'sp': s:red})
@@ -178,6 +191,7 @@ else
   call s:h('SpellRare',   {'cterm': s:sp_un, 'fg': s:fg})
   call s:h('SpellLocal',  {'cterm': s:sp_un, 'fg': s:fg})
 endif
+
 call s:h('Pmenu',         {'fg': s:fg, 'bg': s:bg_light})
 hi! link PmenuSel         Cursor
 call s:h('PmenuSbar',     {'fg': s:fg, 'bg': s:bg_light})
@@ -241,16 +255,13 @@ hi! link pandocFootnoteID           pandocCiteKey
 hi! link pandocNoFormatted          pandocCiteKey
 
 " Critic Markup {{{2
-if exists('g:CriticHC') && g:CriticHC == 1
-  call s:h('criticAdd',             {'bg': s:green,  'fg': s:bg})
-  call s:h('criticDel',             {'bg': s:red,    'fg': s:bg})
-  call s:h('criticMeta',            {'bg': s:pink,   'fg': s:bg})
-  call s:h('criticHighlighter',     {'bg': s:yellow, 'fg': s:bg})
+hi! link criticAdd                  DiffAdd
+hi! link criticDel                  DiffDelete
+hi! link criticHighlighter          DiffText
+if g:sumach_high_contrast
+  call s:h('criticMeta',            {'bg': s:pink, 'fg': s:bg})
 else
-  call s:h('criticAdd',             {'fg': s:green})
-  call s:h('criticDel',             {'fg': s:red})
-  call s:h('criticMeta',            {'fg': s:pink})
-  call s:h('criticHighlighter',     {'fg': s:yellow})
+  call s:h('criticMeta',            {'bg': s:bg, 'fg': s:pink})
 endif
 
 " Octave/Matlab {{{2
@@ -275,14 +286,22 @@ call s:h('GitGutterAdd',            {'fg': s:green})
 call s:h('GitGutterChange',         {'fg': s:yellow})
 call s:h('GitGutterDelete',         {'fg': s:red})
 call s:h('GitGutterChangeDelete',   {'fg': s:brown})
+call s:h('GitGutterAddLine',        {'fg': s:bg, 'bg': s:green})
+call s:h('GitGutterChangeLine',     {'fg': s:bg, 'bg': s:yellow})
+call s:h('GitGutterDeleteLine',     {'fg': s:bg, 'bg': s:red})
+call s:h('GitGutterChangeDeleteLine', {'fg': s:bg, 'bg': s:brown})
 
-hi! link SignifySignAdd             GitGutterAdd
-hi! link SignifySignChange          GitGutterChange
-hi! link SignifySignDelete          GitGutterDelete
-hi! link SignifySignChangeDelete    GitGutterChangeDelete
+call s:h('SignifySignAdd',          {'fg': s:green})
+call s:h('SignifySignChange',       {'fg': s:yellow})
+call s:h('SignifySignDelete',       {'fg': s:red})
+call s:h('SignifySignChangeDelete', {'fg': s:brown})
+call s:h('SignifyLineAdd',          {'fg': s:bg, 'bg': s:green})
+call s:h('SignifyLineChange',       {'fg': s:bg, 'bg': s:yellow})
+call s:h('SignifyLineDelete',       {'fg': s:bg, 'bg': s:red})
+call s:h('SignifyLineChangeDelete', {'fg': s:bg, 'bg': s:brown})
 
-hi! link diffAdded                  GitGutterAdd
-hi! link diffRemoved                GitGutterDelete
+" call s:h('diffAdded',               {'fg': s:green})
+" call s:h('diffRemoved',             {'fg': s:red})
 
 " DiffChar {{{2
 hi! link dcDiffDelPos               Normal
