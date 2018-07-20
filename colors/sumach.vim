@@ -155,7 +155,7 @@ hi! link ModeMsg MoreMsg
 call s:h('LineNr',        {'fg': s:fg_com})
 call s:h('CursorLineNr',  {'fg': s:fg_dark})
 call s:h('Question',      {'fg': s:red})
-call s:h('StatusLine',    {'fg': s:fg_light, 'bg': s:bg_light})
+call s:h('StatusLine',    {'fg': s:fg_bright, 'bg': s:bg_light})
 call s:h('Conceal',       {'fg': s:fg})
 call s:h('StatusLineNC',  {'bg': s:bg_light, 'fg': s:fg_com})
 call s:h('VertSplit',     {'bg': s:bg, 'fg': s:bg})
