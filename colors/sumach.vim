@@ -279,6 +279,10 @@ hi! link matlabCellCommentIndented  Title
 " vim {{{2
 call s:h('vimGroup',                {'fg': s:blue})
 hi! link vimBracket                 Special
+hi! link vimFuncSID                 Keyword
+hi! link vimMapMod                  Keyword
+hi! link vimNotation                Special
+hi! link vimOption                  Identifier
 
 " Plugin Groups {{{1
 " GitGutter / Signify {{{2
