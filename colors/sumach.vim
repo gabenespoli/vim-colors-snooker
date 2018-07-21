@@ -129,7 +129,7 @@ call s:h('Delimiter',     {'fg': s:fg_com})
 hi! link SpecialComment   Special
 hi! link Debug            Special
 
-call s:h('Underlined',    {'fg': s:pink, 'gui': 'underline', 'cterm': 'underline'})
+call s:h('Underlined',    {'gui': 'underline', 'cterm': 'underline'})
 call s:h('Ignore',        {'fg': s:bg_sel})
 call s:h('Error',         {'fg': s:red})
 call s:h('Todo',          {'fg': s:pink, 'bg': s:bg})
