@@ -107,7 +107,7 @@ call s:h('Statement',     {'fg': s:blue})
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
 hi! link Label            Statement
-hi! link Operator         Statement
+call s:h('Operator',      {'fg': s:fg_com})
 hi! link Keyword          Statement
 hi! link Exception        Statement
 
