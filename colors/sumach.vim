@@ -100,10 +100,10 @@ hi! link Number           Constant
 hi! link Boolean          Constant
 hi! link Float            Constant
 
-call s:h('Identifier',    {'fg': s:blue})
+call s:h('Identifier',    {'fg': s:green})
 hi! link Function         Identifier
 
-call s:h('Statement',     {'fg': s:green})
+call s:h('Statement',     {'fg': s:blue})
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
 hi! link Label            Statement
