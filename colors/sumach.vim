@@ -343,10 +343,6 @@ hi! link NERDTreeLinkFile           netrwSymLink
 hi! link NERDTreeLinkDir            netrwSymLink
 call s:h('NERDTreeLinkTarget',      {'fg': s:fg})
 
-" ale {{{2
-hi! link ALEErrorSign               ErrorMsg
-hi! link ALEWarningSign             WarningMsg
-
 " Tagbar {{{2
 hi! link TagbarScope                Normal
 hi! link TagbarType                 Comment
