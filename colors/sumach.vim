@@ -186,10 +186,10 @@ if has('gui_running')
   call s:h('SpellRare',   {'gui': s:sp_un, 'sp': s:cyan})
   call s:h('SpellLocal',  {'gui': s:sp_un, 'sp': s:yellow})
 else
-  call s:h('SpellBad',    {'cterm': s:sp_un, 'fg': s:fg})
-  call s:h('SpellCap',    {'cterm': s:sp_un, 'fg': s:fg})
-  call s:h('SpellRare',   {'cterm': s:sp_un, 'fg': s:fg})
-  call s:h('SpellLocal',  {'cterm': s:sp_un, 'fg': s:fg})
+  call s:h('SpellBad',    {'cterm': s:sp_un})
+  call s:h('SpellCap',    {'cterm': s:sp_un})
+  call s:h('SpellRare',   {'cterm': s:sp_un})
+  call s:h('SpellLocal',  {'cterm': s:sp_un})
 endif
 
 call s:h('Pmenu',         {'fg': s:fg, 'bg': s:bg_light})
