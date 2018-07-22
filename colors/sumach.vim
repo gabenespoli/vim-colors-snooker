@@ -37,7 +37,7 @@ if &background ==? 'dark'
   let s:fg_light        = { 'gui': '#a39e99', 'cterm': '13' }
   let s:fg_bright       = { 'gui': '#bcb2a8', 'cterm': '15' }
   let s:red             = { 'gui': '#c34b4b', 'cterm': '1'  }
-  let s:brown           = { 'gui': '#af5f37', 'cterm': '9'  }
+  let s:orange          = { 'gui': '#af5f37', 'cterm': '9'  }
   let s:yellow          = { 'gui': '#c38737', 'cterm': '3'  }
   let s:green           = { 'gui': '#7d7d37', 'cterm': '2'  }
   let s:cyan            = { 'gui': '#4b875f', 'cterm': '6'  }
@@ -55,7 +55,7 @@ else
   let s:fg_light        = { 'gui': '#1c1c1c', 'cterm': '13' }
   let s:fg_bright       = { 'gui': '#000000', 'cterm': '15' }
   let s:red             = { 'gui': '#ff4b4b', 'cterm': '1'  }
-  let s:brown           = { 'gui': '#9b5f00', 'cterm': '9'  }
+  let s:orange          = { 'gui': '#9b5f00', 'cterm': '9'  }
   let s:yellow          = { 'gui': '#eb8700', 'cterm': '3'  }
   let s:green           = { 'gui': '#879b37', 'cterm': '2'  }
   let s:cyan            = { 'gui': '#37915f', 'cterm': '6'  }
@@ -122,7 +122,7 @@ hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
 
-call s:h('Special',       {'fg': s:brown})
+call s:h('Special',       {'fg': s:orange})
 hi! link SpecialChar      Special
 hi! link Tag              Special
 call s:h('Delimiter',     {'fg': s:fg_com})
@@ -289,20 +289,20 @@ hi! link vimOption                  Identifier
 call s:h('GitGutterAdd',            {'fg': s:green})
 call s:h('GitGutterChange',         {'fg': s:yellow})
 call s:h('GitGutterDelete',         {'fg': s:red})
-call s:h('GitGutterChangeDelete',   {'fg': s:brown})
+call s:h('GitGutterChangeDelete',   {'fg': s:orange})
 call s:h('GitGutterAddLine',        {'fg': s:bg, 'bg': s:green})
 call s:h('GitGutterChangeLine',     {'fg': s:bg, 'bg': s:yellow})
 call s:h('GitGutterDeleteLine',     {'fg': s:bg, 'bg': s:red})
-call s:h('GitGutterChangeDeleteLine', {'fg': s:bg, 'bg': s:brown})
+call s:h('GitGutterChangeDeleteLine', {'fg': s:bg, 'bg': s:orange})
 
 call s:h('SignifySignAdd',          {'fg': s:green})
 call s:h('SignifySignChange',       {'fg': s:yellow})
 call s:h('SignifySignDelete',       {'fg': s:red})
-call s:h('SignifySignChangeDelete', {'fg': s:brown})
+call s:h('SignifySignChangeDelete', {'fg': s:orange})
 call s:h('SignifyLineAdd',          {'fg': s:bg, 'bg': s:green})
 call s:h('SignifyLineChange',       {'fg': s:bg, 'bg': s:yellow})
 call s:h('SignifyLineDelete',       {'fg': s:bg, 'bg': s:red})
-call s:h('SignifyLineChangeDelete', {'fg': s:bg, 'bg': s:brown})
+call s:h('SignifyLineChangeDelete', {'fg': s:bg, 'bg': s:orange})
 
 " call s:h('diffAdded',               {'fg': s:green})
 " call s:h('diffRemoved',             {'fg': s:red})

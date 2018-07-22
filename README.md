@@ -21,7 +21,7 @@ For terminal vim, set your terminal colors to the following values for the dark 
 | 0    | black          | background         | 1c1c1c | ffffff |                               |
 | 1    | red            | red                | c34b4b | ff4b4b | errors                        |
 | 2    | green          | green              | 7d7d37 | 879b37 | statement, keyword            |
-| 3    | yellow         | yellow             | c38737 | eb8700 | type                          |
+| 3    | yellow         | yellow/orange      | c38737 | eb8700 | type                          |
 | 4    | blue           | blue               | 37879b | 3773ff | identifier, function          |
 | 5    | magenta        | purple             | 786ea7 | 9b5fff | preproc                       |
 | 6    | cyan           | cyan               | 4b875f | 37915f | constant, string              |
