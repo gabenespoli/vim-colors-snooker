@@ -89,7 +89,7 @@ endfunction
 " Main Groups {{{1
 " (see `:h w18`)
 
-call s:h('Normal',        {'bg': s:bg, 'fg': s:fg})
+call s:h('Normal',        {'fg': s:fg})
 call s:h('Cursor',        {'bg': s:fg, 'fg': s:bg })
 call s:h('Comment',       {'fg': s:fg_com, 'gui': 'italic', 'cterm': 'italic'})
 
