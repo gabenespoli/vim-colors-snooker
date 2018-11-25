@@ -26,6 +26,10 @@ if !exists('g:sumach_high_contrast')
   let g:sumach_high_contrast = 1
 endif
 
+if !exists('g:sumach_color_cursor')
+  let g:sumach_color_cursor = 0
+endif
+
 " Colors {{{1
 if &background ==? 'dark'
   let s:bg              = { 'gui': '#1c1c1c', 'cterm': '0'  }
@@ -90,7 +94,11 @@ endfunction
 " (see `:h w18`)
 
 call s:h('Normal',        {'fg': s:fg})
-call s:h('Cursor',        {'bg': s:fg, 'fg': s:bg })
+if g:sumach_color_cursor
+  call s:h('Cursor',        {'bg': s:blue, 'fg': s:bg })
+else
+  call s:h('Cursor',        {'bg': s:fg, 'fg': s:bg })
+endif
 call s:h('Comment',       {'fg': s:fg_com, 'gui': 'italic', 'cterm': 'italic'})
 
 call s:h('Constant',      {'fg': s:cyan})

@@ -43,6 +43,8 @@ For terminal vim, set your terminal colors to the following values for the dark 
 
 `g:sumach_high_contrast`: Default 1 to enable the "inverse" look for diffs and some other elements (where the background is red and the foreground is the background color, for example). Set to 0 to make these elements more subtle by using the "non-inverse" version.
 
+`g:sumach_color_cursor`: Default 0 for the cursor to be the foreground color. Set to 1 for the cursor to be blue.
+
 ## Commands
 
 `:SumachContrastToggle`: A function is provided to toggle between high and low contrast settings. This function just changes the value of the `g:sumach_high_contrast` variable and then calls `:colorscheme sumach`. I use the following mapping in my vimrc (similar to the `yob` mapping in vim-unimpaired).
