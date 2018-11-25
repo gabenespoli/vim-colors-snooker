@@ -359,3 +359,9 @@ hi! link TagbarType                 Comment
 hi link notesTitle                  Title
 hi link notesAtxHeading             Title
 hi link notesAtxMarker              Title
+
+" MattesGroeger/vim-bookmarks {{{2
+hi link BookmarkSign                Statement
+hi link BookmarkAnnotationSign      Statement
+hi link BookmarkLine                Statement
+hi link BookmarkAnnotationLine      Statement
