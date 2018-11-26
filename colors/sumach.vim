@@ -221,6 +221,14 @@ if has('nvim')
   hi! link TermCursorNC   Cursor
 endif
 
+" my own extras {{{2
+call s:h('Modified',      {'fg': s:yellow, 'bg': s:bg_light})
+call s:h('ReadOnly',      {'fg': s:red, 'bg': s:bg_light})
+call s:h('TodoStatus',    {'fg': s:pink, 'bg': s:bg_light})
+hi! link TabMod           Modified
+hi! link TabModSel        Modified
+hi! link markdownPandocCitation pandocCiteKey
+
 " Syntaxes {{{1
 " Markdown {{{2
 hi! link markdownHeadingDelimiter   Title
