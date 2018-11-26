@@ -355,7 +355,7 @@ call s:h('NERDTreeLinkTarget',      {'fg': s:fg})
 hi! link TagbarScope                Normal
 hi! link TagbarType                 Comment
 
-" vim-notes {{{2
+" xolox/vim-notes {{{2
 hi link notesTitle                  Title
 hi link notesAtxHeading             Title
 hi link notesAtxMarker              Title
