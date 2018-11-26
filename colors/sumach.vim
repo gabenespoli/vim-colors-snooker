@@ -350,6 +350,7 @@ call s:h('NERDTreeExecFile',        {'fg': s:pink})
 hi! link NERDTreeLinkFile           netrwSymLink
 hi! link NERDTreeLinkDir            netrwSymLink
 call s:h('NERDTreeLinkTarget',      {'fg': s:fg})
+hi! link NERDTreeFlags              Delimiter
 
 " Tagbar {{{2
 hi! link TagbarScope                Normal
