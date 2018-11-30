@@ -225,6 +225,7 @@ endif
 call s:h('Modified',      {'fg': s:yellow, 'bg': s:bg_light})
 call s:h('ReadOnly',      {'fg': s:red, 'bg': s:bg_light})
 call s:h('TodoStatus',    {'fg': s:pink, 'bg': s:bg_light})
+call s:h('ErrorStatus',   {'fg': s:red, 'bg': s:bg_light})
 hi! link TabMod           Modified
 hi! link TabModSel        Modified
 hi! link markdownPandocCitation pandocCiteKey
