@@ -84,7 +84,6 @@ call s:h('Comment',       {'fg': s:fg_com, 'gui': 'italic', 'cterm': 'italic'})
 
 call s:h('Constant',      {'fg': s:cyan})
 hi! link String           Constant
-" call s:h('String'  ,      {'fg': s:brown})
 hi! link Character        Constant
 hi! link Number           Constant
 hi! link Boolean          Constant
@@ -97,28 +96,24 @@ call s:h('Statement',     {'fg': s:green})
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
 hi! link Label            Statement
-hi! link Operator         Delimiter
+call s:h('Operator',      {'fg': s:red})
 hi! link Keyword          Statement
 hi! link Exception        Statement
 
 call s:h('PreProc',       {'fg': s:pink})
 hi! link Include          PreProc
-hi! link Define           Include
-hi! link Macro            Include
-hi! link PreCondit        Include
+hi! link Define           PreProc
+hi! link Macro            PreProc
+hi! link PreCondit        PreProc
 
 call s:h('Type',          {'fg': s:brown})
-" call s:h('StorageClass',  {'fg': s:red})
-call s:h('Structure',     {'fg': s:green}) " pink
-" call s:h('Typedef',       {'fg': s:yellow})
+call s:h('Structure',     {'fg': s:green})
 hi! link StorageClass     Type
-" hi! link Structure        Type
 hi! link Typedef          Type
 
 call s:h('Special',       {'fg': s:yellow})
 hi! link SpecialChar      Special
 hi! link Tag              Special
-" call s:h('Delimiter',     {'fg': s:fg_com})
 call s:h('Delimiter',     {'fg': s:red})
 hi! link SpecialComment   Special
 hi! link Debug            Special
