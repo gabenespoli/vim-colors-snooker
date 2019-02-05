@@ -286,10 +286,7 @@ hi! link matlabCellComment          Title
 hi! link matlabCellCommentIndented  Title
 
 " vim {{{2
-" hi! link vimGroup                   PreProc
 hi! link vimBracket                 Special
-hi! link vimNotation                Special
-hi! link vimOption                  Type
 
 " javascript {{{2
 hi! link jsBrackets                 Delimiter
