@@ -16,7 +16,7 @@ Apply the colorscheme:
 
 For terminal vim, set your terminal colors to the following values for the dark or light palette. This palette follows [Base16](https://github.com/chriskempson/base16). If you are using iTerm you can get the .itermcolors file from [this repo](https://github.com/gabenespoli/iterm-color-palettes).
 
-| Code | Terminal Color | Base16 Color           | dark   | Function                      |
+| Code | Terminal Color | Base16 Color           | hex    | Function                      |
 | ---- | -------------- | -----------------      | ------ | ----------------------------- |
 | 0    | black          | background             | 212524 |                               |
 | 10   | bright green   | background (light)     | 243730 | status bars                   |
