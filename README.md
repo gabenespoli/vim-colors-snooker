@@ -18,24 +18,24 @@ For terminal vim, set your terminal colors to the following values for the dark 
 
 TODO: update this table, the colors are from a previous colorscheme right now.
 
-| Code | Color          | Scheme Color       | dark   | light  | Function                      |
-| ---- | -------------- | -----------------  | ------ | ------ | ----------------------------- |
-| 0    | black          | background         | 1c1c1c | ffffff |                               |
-| 1    | red            | red                | c34b4b | ff4b4b | errors                        |
-| 2    | green          | green              | 7d7d37 | 879b37 | statement, keyword            |
-| 3    | yellow         | yellow/orange      | c38737 | eb8700 | type                          |
-| 4    | blue           | blue               | 37879b | 3773ff | identifier, function          |
-| 5    | magenta        | purple             | 786ea7 | 9b5fff | preproc                       |
-| 6    | cyan           | cyan               | 4b875f | 37915f | constant, string              |
-| 7    | white          | foreground         | 808080 | 3a3a3a |                               |
-| 8    | bright black   | darker foreground  | 585858 | 8a8a8a | comments, operator, delimiter |
-| 9    | bright red     | orange/brown       | af5f37 | 9b5f00 | special                       |
-| 10   | bright green   | light background   | 2b2b2b | ebebeb | status bars                   |
-| 11   | bright yellow  | lighter background | 3a3a3a | dadada | selection background          |
-| 12   | bright blue    | dark foreground    | 767676 | 9e9e9e |                               |
-| 13   | bright magenta | light foreground   | a39e99 | 1c1c1c | selection foreground, bold    |
-| 14   | bright cyan    | pink               | af6487 | ff739b | todo                          |
-| 15   | bright white   | bright foreground  | bcb2a8 | 000000 | titles, status bar foreground |
+| Code | Terminal Color | Base16 Color           | dark   | Function                      |
+| ---- | -------------- | -----------------      | ------ | ----------------------------- |
+| 0    | black          | background             | 212524 |                               |
+| 10   | bright green   | background (light)     | 243730 | status bars                   |
+| 11   | bright yellow  | background (selection) | 284737 | selection background          |
+| 8    | bright black   | foreground (comments)  | 5F785C | comments, operator, delimiter |
+| 12   | bright blue    | foreground (darker)    | 9BAD9B |                               |
+| 7    | white          | foreground             | ADAD9B |                               |
+| 13   | bright magenta | foreground (light)     | CDC08B | selection foreground, bold    |
+| 15   | bright white   | foreground (bright)    | FCEDAB | titles, status bar foreground |
+| 2    | green          | green (baize)          | 25C528 | statement, keyword            |
+| 1    | red            | red                    | E52E1A | errors                        |
+| 3    | yellow         | yellow                 | EBBB2B | type                          |
+| 6    | cyan           | cyan (green ball)      | 21C296 | constant, string              |
+| 9    | bright red     | brown                  | B98036 | special                       |
+| 4    | blue           | blue                   | 0094CF | identifier, function          |
+| 5    | magenta        | pink                   | DF7376 | preproc                       |
+| 14   | bright cyan    | pink2                  | C87F7F | todo                          |
 
 ## Options
 
