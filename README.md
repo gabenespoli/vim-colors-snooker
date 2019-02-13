@@ -16,24 +16,24 @@ Apply the colorscheme:
 
 For terminal vim, set your terminal colors to the following values for the dark or light palette. This palette follows [Base16](https://github.com/chriskempson/base16). If you are using iTerm you can get the .itermcolors file from [this repo](https://github.com/gabenespoli/iterm-color-palettes).
 
-| Code | Terminal Color | Base16 Color           | hex    | Function                       |
-| ---- | -------------- | -----------------      | ------ | -----------------------------  |
-| 0    | black          | background             | 212524 |                                |
-| 10   | bright green   | background (light)     | 243730 | status bars                    |
-| 11   | bright yellow  | background (selection) | 284737 | selection background           |
-| 8    | bright black   | foreground (comments)  | 5F785C | comments                       |
-| 12   | bright blue    | foreground (darker)    | 9BAD9B |                                |
-| 7    | white          | foreground             | ADAD9B |                                |
-| 13   | bright magenta | foreground (light)     | CDC08B | selection foreground, bold     |
-| 15   | bright white   | foreground (bright)    | FCEDAB | titles, status bar foreground  |
-| 2    | green          | green (baize)          | 25C528 | statement, keyword             |
-| 1    | red            | red                    | E52E1A | error, operator, delimiter     |
-| 3    | yellow         | yellow                 | EBBB2B | type                           |
-| 6    | cyan           | cyan (green ball)      | 21C296 | constant, string               |
-| 9    | bright red     | brown                  | B98036 | special                        |
-| 4    | blue           | blue                   | 0094CF | variable, identifier, function |
-| 5    | magenta        | pink                   | DF7376 | preproc, include               |
-| 14   | bright cyan    | pink2                  | C87F7F | todo                           |
+| Terminal Code | Snooker Color  | Base16 Color           | Hex    | Function                       |
+| ------------- | -------------- | ---------------------- | ------ | -----------------------------  |
+| 0             |                | background             | 212524 |                                |
+| 10            |                | background (light)     | 243730 | status bars                    |
+| 11            |                | background (selection) | 284737 | selection background           |
+| 8             |                | foreground (comments)  | 5F785C | comments                       |
+| 12            |                | foreground (darker)    | 9BAD9B |                                |
+| 7             |                | foreground             | ADAD9B |                                |
+| 13            |                | foreground (light)     | CDC08B | selection foreground, bold     |
+| 15            | cue ball       | foreground (bright)    | FCEDAB | titles, status bar foreground  |
+| 2             | baize          | green                  | 25C528 | statement, keyword             |
+| 1             | red balls      | red                    | E52E1A | error, operator, delimiter     |
+| 3             | yellow ball    | yellow                 | EBBB2B | type                           |
+| 6             | green ball     | cyan                   | 21C296 | constant, string               |
+| 9             | brown ball     | brown                  | B98036 | special                        |
+| 4             | blue ball      | blue                   | 0094CF | variable, identifier, function |
+| 5             | pink ball      | pink                   | DF7376 | preproc, include               |
+| 14            |                | pink2                  | C87F7F | todo                           |
 
 ## Options
 
