@@ -193,7 +193,7 @@ call s:h('CursorLine',    {'bg': s:bg_light})
 call s:h('ColorColumn',   {'bg': s:bg_light})
 
 " remainder of syntax highlighting
-call s:h('MatchParen',    {'bg': s:bg_sel, 'fg': s:fg})
+call s:h('MatchParen',    {'bg': s:bg_sel})
 call s:h('qfLineNr',      {'fg': s:fg_dark})
 
 " nvim-only groups {{{2
