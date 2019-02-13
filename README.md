@@ -37,17 +37,17 @@ For terminal vim, set your terminal colors to the following values for the dark 
 
 ## Options
 
-`g:snooker_terminal_italics`: Default 0, only affects terminal vim. Set to 1 if your terminal supports italics.
+`g:snooker_terminal_italics`: Default 0, only affects terminal vim. Set to 1 if your terminal supports italics. This is really only for comments.
 
 `g:snooker_spell_undercurl`: Default 1, only affects gui vim. Set to 0 to use an underline instead of an undercurl for spelling highlights.
 
-`g:snooker_high_contrast`: Default 1 to enable the "inverse" look for diffs and some other elements (where the background is red and the foreground is the background color, for example). Set to 0 to make these elements more subtle by using the "non-inverse" version.
+`g:snooker_high_contrast`: Default 1 to enable the "inverse" look for diffs and some other elements (where the background is red and the foreground is the background color, for example). Set to 0 to make these elements more subtle by using the "non-inverse" version. A function is provided (see below) to toggle this option.
 
-`g:snooker_color_cursor`: Default 0 for the cursor to be the foreground color. Set to 1 for the cursor to be blue.
+`g:snooker_color_cursor`: Default 1 for the cursor to be bright foreground, like the cue ball. Set to 0 to make it the foreground color instead.
 
 ## Commands
 
-`:SnookerContrastToggle`: A function is provided to toggle between high and low contrast settings. This function just changes the value of the `g:snooker_high_contrast` variable and then calls `:colorscheme snooker`. I use the following mapping in my vimrc:
+`:SnookerContrastToggle`: A function is provided to toggle between high and low contrast settings. This function just changes the value of the `g:snooker_high_contrast` variable and then calls `:colorscheme snooker`. I use the following mapping (in the style of [vim-unimpaired](https://github.com/tpope/vim-unimpaired)) in my vimrc:
 
 ```vim
 nnoremap yoC :SnookerContrastToggle()<CR>
