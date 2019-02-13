@@ -106,12 +106,12 @@ hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h('Type',          {'fg': s:brown})
+call s:h('Type',          {'fg': s:yellow})
 call s:h('Structure',     {'fg': s:green})
 hi! link StorageClass     Type
 hi! link Typedef          Type
 
-call s:h('Special',       {'fg': s:yellow})
+call s:h('Special',       {'fg': s:brown})
 hi! link SpecialChar      Special
 hi! link Tag              Special
 call s:h('Delimiter',     {'fg': s:red})
