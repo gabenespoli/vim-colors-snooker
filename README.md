@@ -1,20 +1,22 @@
-# Sumach Colorscheme
+# Snooker Colorscheme
 
-A 16-color palette and vim colorscheme with dark/low-contrast and light/high-contrast variants.
+A 16-color palette and vim colorscheme based on the colors of a snooker table.
 
 ## Installation
 
 ### in Vim
 
 Vim Plug:
-`Plug gabenespoli/vim-colors-sumach`
+`Plug gabenespoli/vim-colors-snooker`
 
 Apply the colorscheme:
-`colorscheme sumach`
+`colorscheme snooker`
 
 ### in your terminal
 
 For terminal vim, set your terminal colors to the following values for the dark or light palette. This palette follows [Base16](https://github.com/chriskempson/base16). If you are using iTerm you can get the .itermcolors file from [this repo](https://github.com/gabenespoli/iterm-color-palettes).
+
+TODO: update this table, the colors are from a previous colorscheme right now.
 
 | Code | Color          | Scheme Color       | dark   | light  | Function                      |
 | ---- | -------------- | -----------------  | ------ | ------ | ----------------------------- |
@@ -37,18 +39,18 @@ For terminal vim, set your terminal colors to the following values for the dark 
 
 ## Options
 
-`g:sumach_terminal_italics`: Default 0, only affects terminal vim. Set to 1 if your terminal supports italics.
+`g:snooker_terminal_italics`: Default 0, only affects terminal vim. Set to 1 if your terminal supports italics.
 
-`g:sumach_spell_undercurl`: Default 1, only affects gui vim. Set to 0 to use an underline instead of an undercurl for spelling highlights.
+`g:snooker_spell_undercurl`: Default 1, only affects gui vim. Set to 0 to use an underline instead of an undercurl for spelling highlights.
 
-`g:sumach_high_contrast`: Default 1 to enable the "inverse" look for diffs and some other elements (where the background is red and the foreground is the background color, for example). Set to 0 to make these elements more subtle by using the "non-inverse" version.
+`g:snooker_high_contrast`: Default 1 to enable the "inverse" look for diffs and some other elements (where the background is red and the foreground is the background color, for example). Set to 0 to make these elements more subtle by using the "non-inverse" version.
 
-`g:sumach_color_cursor`: Default 0 for the cursor to be the foreground color. Set to 1 for the cursor to be blue.
+`g:snooker_color_cursor`: Default 0 for the cursor to be the foreground color. Set to 1 for the cursor to be blue.
 
 ## Commands
 
-`:SumachContrastToggle`: A function is provided to toggle between high and low contrast settings. This function just changes the value of the `g:sumach_high_contrast` variable and then calls `:colorscheme sumach`. I use the following mapping in my vimrc (similar to the `yob` mapping in vim-unimpaired).
+`:SnookerContrastToggle`: A function is provided to toggle between high and low contrast settings. This function just changes the value of the `g:snooker_high_contrast` variable and then calls `:colorscheme snooker`. I use the following mapping in my vimrc:
 
 ```vim
-nnoremap yoB :SumachContrastToggle()<CR>
+nnoremap yoC :SnookerContrastToggle()<CR>
 ```
