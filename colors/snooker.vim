@@ -126,7 +126,7 @@ call s:h('Todo',          {'fg': s:pink})
 " Extra Groups {{{1
 " ordered according to `:help hitest.vim`
 
-call s:h('SpecialKey',    {'fg': s:fg_dark})
+call s:h('SpecialKey',    {'fg': s:fg})
 if has('nvim')
   call s:h('NonText',     {'fg': s:table, 'gui': 'bold', 'cterm': 'bold'})
   call s:h('Whitespace',  {'fg': s:bg_light})
@@ -142,7 +142,7 @@ call s:h('MoreMsg',       {'fg': s:fg_com})
 hi! link ModeMsg MoreMsg
 
 call s:h('LineNr',        {'fg': s:fg_com})
-call s:h('CursorLineNr',  {'fg': s:fg_dark})
+call s:h('CursorLineNr',  {'fg': s:fg})
 call s:h('Question',      {'fg': s:red})
 call s:h('StatusLine',    {'fg': s:fg_bright, 'bg': s:bg_light})
 call s:h('Conceal',       {'fg': s:fg})
@@ -185,16 +185,16 @@ call s:h('Pmenu',         {'fg': s:fg, 'bg': s:bg_light})
 hi! link PmenuSel         Cursor
 call s:h('PmenuSbar',     {'fg': s:fg, 'bg': s:bg_light})
 call s:h('PmenuThumb',    {'fg': s:fg, 'bg': s:bg_light})
-call s:h('TabLine',       {'fg': s:fg_dark, 'bg': s:bg_light})
+call s:h('TabLine',       {'fg': s:fg, 'bg': s:bg_light})
 call s:h('TabLineSel',    {'fg': s:fg_light, 'bg': s:bg_light})
-call s:h('TabLineFill',   {'fg': s:fg_dark, 'bg': s:bg})
+call s:h('TabLineFill',   {'fg': s:fg, 'bg': s:bg})
 call s:h('CursorColumn',  {'bg': s:bg_light})
 call s:h('CursorLine',    {'bg': s:bg_light})
 call s:h('ColorColumn',   {'bg': s:bg_light})
 
 " remainder of syntax highlighting
 call s:h('MatchParen',    {'bg': s:bg_sel})
-call s:h('qfLineNr',      {'fg': s:fg_dark})
+call s:h('qfLineNr',      {'fg': s:fg})
 
 " nvim-only groups {{{2
 if has('nvim')
