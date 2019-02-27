@@ -203,8 +203,8 @@ if has('nvim')
 endif
 
 " my own extras {{{2
-call s:h('Modified',      {'bg': s:yellow, 'fg': s:bg})
-call s:h('ReadOnly',      {'bg': s:red,    'fg': s:bg})
+call s:h('Modified',      {'fg': s:yellow, 'bg': s:fg_com})
+call s:h('ReadOnly',      {'fg': s:brown,  'bg': s:fg_com})
 call s:h('TodoStatus',    {'bg': s:pink,   'fg': s:fg_bright})
 call s:h('ErrorStatus',   {'bg': s:red,    'fg': s:fg_bright})
 call s:h('TabMod',        {'fg': s:yellow, 'bg': s:fg_com})
