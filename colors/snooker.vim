@@ -28,7 +28,7 @@ if !exists('g:snooker_high_contrast')
 endif
 
 if !exists('g:snooker_color_cursor')
-  let g:snooker_color_cursor = 0
+  let g:snooker_color_cursor = 1
 endif
 
 " Colors {{{1
