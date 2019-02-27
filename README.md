@@ -33,7 +33,7 @@ For terminal vim, set your terminal colors to the following values for the dark 
 | 9             | brown ball     | brown                  | B98036 | special                        |
 | 4             | blue ball      | blue                   | 0094CF | variable, identifier, function |
 | 5             | pink ball      | pink                   | DF7376 | preproc, include               |
-| 14            |                | pink2                  | C87F7F | todo                           |
+| 14            |                | table                  | 5D4124 | todo                           |
 
 ## Options
 

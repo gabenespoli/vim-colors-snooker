@@ -47,7 +47,7 @@ let s:cyan            = { 'gui': '#21C296', 'cterm': '6'  }
 let s:brown           = { 'gui': '#B98036', 'cterm': '9'  }
 let s:blue            = { 'gui': '#0094CF', 'cterm': '4'  }
 let s:pink            = { 'gui': '#DF7376', 'cterm': '5'  }
-let s:pink2           = { 'gui': '#C87F7F', 'cterm': '14' }
+let s:table           = { 'gui': '#5D4124', 'cterm': '14' }
 
 if g:snooker_spell_undercurl == 1
   let s:sp_un      = 'undercurl'
@@ -128,7 +128,7 @@ call s:h('Todo',          {'fg': s:pink})
 
 call s:h('SpecialKey',    {'fg': s:fg_dark})
 if has('nvim')
-  call s:h('NonText',     {'fg': s:pink2, 'gui': 'bold', 'cterm': 'bold'})
+  call s:h('NonText',     {'fg': s:table, 'gui': 'bold', 'cterm': 'bold'})
   call s:h('Whitespace',  {'fg': s:bg_light})
   call s:h('EndOfBuffer', {'fg': s:bg})
 else
@@ -205,7 +205,7 @@ endif
 " my own extras {{{2
 call s:h('Modified',      {'fg': s:yellow, 'bg': s:bg_light})
 call s:h('ReadOnly',      {'fg': s:red, 'bg': s:bg_light})
-call s:h('TodoStatus',    {'fg': s:pink2, 'bg': s:bg_light})
+call s:h('TodoStatus',    {'fg': s:table, 'bg': s:bg_light})
 call s:h('ErrorStatus',   {'fg': s:red, 'bg': s:bg_light})
 hi! link TabMod           Modified
 hi! link TabModSel        Modified
@@ -263,9 +263,9 @@ hi! link criticAdd                  DiffAdd
 hi! link criticDel                  DiffDelete
 hi! link criticHighlighter          DiffText
 if g:snooker_high_contrast
-  call s:h('criticMeta',            {'bg': s:pink2, 'fg': s:bg})
+  call s:h('criticMeta',            {'bg': s:pink, 'fg': s:bg})
 else
-  call s:h('criticMeta',            {'bg': s:bg, 'fg': s:pink2})
+  call s:h('criticMeta',            {'bg': s:bg, 'fg': s:pink})
 endif
 
 " Python {{{2
@@ -350,10 +350,10 @@ call s:h('CtrlPStats',              {'fg': s:red, 'bg': s:bg_light})
 " netrw {{{2
 call s:h('netrwClassify',           {'fg': s:fg_com})
 call s:h('netrwSymLink',            {'fg': s:cyan})
-call s:h('netrwExe',                {'fg': s:pink2})
+call s:h('netrwExe',                {'fg': s:pink})
 
 " NERDTree {{{2
-call s:h('NERDTreeExecFile',        {'fg': s:pink2})
+call s:h('NERDTreeExecFile',        {'fg': s:pink})
 hi! link NERDTreeLinkFile           netrwSymLink
 hi! link NERDTreeLinkDir            netrwSymLink
 call s:h('NERDTreeLinkTarget',      {'fg': s:fg})
