@@ -144,10 +144,10 @@ hi! link ModeMsg MoreMsg
 call s:h('LineNr',        {'fg': s:fg_com})
 call s:h('CursorLineNr',  {'fg': s:fg})
 call s:h('Question',      {'fg': s:red})
-call s:h('StatusLine',    {'fg': s:fg_bright, 'bg': s:bg_light})
+call s:h('StatusLine',    {'fg': s:fg_bright, 'bg': s:fg_com})
 call s:h('Conceal',       {'fg': s:fg})
-call s:h('StatusLineNC',  {'bg': s:bg_light, 'fg': s:fg_com})
-call s:h('VertSplit',     {'bg': s:bg, 'fg': s:bg})
+call s:h('StatusLineNC',  {'fg': s:bg, 'bg': s:fg_com})
+call s:h('VertSplit',     {'bg': s:fg_com, 'fg': s:fg_com})
 call s:h('Title',         {'fg': s:fg_light, 'gui': 'bold', 'cterm': 'bold'})
 call s:h('Visual',        {'bg': s:bg_sel, 'fg': s:fg_light})
 call s:h('VisualNOS',     {'bg': s:bg_light, 'fg': s:fg})
@@ -185,8 +185,8 @@ call s:h('Pmenu',         {'fg': s:fg, 'bg': s:bg_light})
 hi! link PmenuSel         Cursor
 call s:h('PmenuSbar',     {'fg': s:fg, 'bg': s:bg_light})
 call s:h('PmenuThumb',    {'fg': s:fg, 'bg': s:bg_light})
-call s:h('TabLine',       {'fg': s:fg, 'bg': s:bg_light})
-call s:h('TabLineSel',    {'fg': s:fg_light, 'bg': s:bg_light})
+call s:h('TabLine',       {'fg': s:bg, 'bg': s:fg_com})
+call s:h('TabLineSel',    {'fg': s:fg_bright, 'bg': s:fg_com})
 call s:h('TabLineFill',   {'fg': s:fg, 'bg': s:bg})
 call s:h('CursorColumn',  {'bg': s:bg_light})
 call s:h('CursorLine',    {'bg': s:bg_light})
@@ -203,12 +203,12 @@ if has('nvim')
 endif
 
 " my own extras {{{2
-call s:h('Modified',      {'fg': s:yellow, 'bg': s:bg_light})
-call s:h('ReadOnly',      {'fg': s:red, 'bg': s:bg_light})
-call s:h('TodoStatus',    {'fg': s:table, 'bg': s:bg_light})
-call s:h('ErrorStatus',   {'fg': s:red, 'bg': s:bg_light})
-hi! link TabMod           Modified
-hi! link TabModSel        Modified
+call s:h('Modified',      {'bg': s:yellow, 'fg': s:bg})
+call s:h('ReadOnly',      {'bg': s:red,    'fg': s:bg})
+call s:h('TodoStatus',    {'bg': s:pink,   'fg': s:fg_bright})
+call s:h('ErrorStatus',   {'bg': s:red,    'fg': s:fg_bright})
+call s:h('TabMod',        {'fg': s:yellow, 'bg': s:fg_com})
+hi! link TabModSel        TabMod
 hi! link markdownPandocCitation pandocCiteKey
 call s:h('Italic',        {'fg': s:fg_light, 'gui': 'italic', 'cterm': 'italic'})
 call s:h('Bold',          {'fg': s:fg_light, 'gui': 'bold', 'cterm': 'bold'})
