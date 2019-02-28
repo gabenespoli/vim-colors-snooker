@@ -153,8 +153,8 @@ call s:h('Visual',        {'bg': s:bg_sel})
 call s:h('VisualNOS',     {'bg': s:bg_sel, 'fg': s:fg_bright})
 call s:h('WarningMsg',    {'fg': s:fg_bright, 'bg': s:brown})
 call s:h('WildMenu',      {'fg': s:bg_light, 'bg': s:fg_bright})
-call s:h('Folded',        {'fg': s:fg_bright, 'bg': s:bg, 'gui': 'italic', 'cterm': 'italic'})
-call s:h('FoldColumn',    {'fg': s:fg_bright})
+call s:h('Folded',        {'fg': s:fg_light, 'bg': s:bg, 'gui': 'italic', 'cterm': 'italic'})
+call s:h('FoldColumn',    {'fg': s:fg_light})
 call s:h('SignColumn',    {'fg': s:fg})
 
 if g:snooker_high_contrast
