@@ -33,10 +33,10 @@ endif
 
 " Colors {{{1
 let s:bg              = { 'gui': '#212524', 'cterm': '0'  }
-let s:bg_light        = { 'gui': '#243730', 'cterm': '10' }
-let s:bg_sel          = { 'gui': '#284737', 'cterm': '11' }
-let s:fg_com          = { 'gui': '#5F785C', 'cterm': '8'  }
-let s:fg_dark         = { 'gui': '#9BAD9B', 'cterm': '12' }
+let s:bg_light        = { 'gui': '#2B302B', 'cterm': '10' }
+let s:bg_sel          = { 'gui': '#32362E', 'cterm': '11' }
+let s:fg_com          = { 'gui': '#645E50', 'cterm': '8'  }
+let s:fg_dark         = { 'gui': '#5F785C', 'cterm': '12' }
 let s:fg              = { 'gui': '#ADAD9B', 'cterm': '7'  }
 let s:fg_light        = { 'gui': '#CDC08B', 'cterm': '13' }
 let s:fg_bright       = { 'gui': '#FCEDAB', 'cterm': '15' }
