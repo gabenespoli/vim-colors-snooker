@@ -335,7 +335,7 @@ call s:h('CtrlPMatch',              {'fg': s:yellow})
 call s:h('CtrlPPrtBase',            {'fg': s:fg_bright, 'bg': s:bg})
 hi! link CtrlPPrtCursor             Cursor
 hi! link CtrlPBufferNr              Constant
-hi! link CtrlPBufferInd             Type
+hi! link CtrlPBufferInd             Identifier
 hi! link CtrlPBufferHid             Normal
 hi! link CtrlPBufferVis             Comment
 hi! link CtrlPBufferCur             Question
