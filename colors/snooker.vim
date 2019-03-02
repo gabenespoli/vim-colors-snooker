@@ -343,7 +343,7 @@ hi! link CtrlPBufferHidMod          CtrlPBufferHid
 hi! link CtrlPBufferVisMod          CtrlPBufferVis
 hi! link CtrlPBufferCurMod          CtrlPBufferCur
 hi! link CtrlPBufferPath            Comment
-call s:h('CtrlPMode1',              {'fg': s:green, 'bg': s:fg_com})
+call s:h('CtrlPMode1',              {'fg': s:yellow, 'bg': s:fg_com})
 hi! link CtrlPMode2                 StatusLine
 call s:h('CtrlPStats',              {'fg': s:red, 'bg': s:fg_com})
 
