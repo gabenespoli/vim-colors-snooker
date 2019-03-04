@@ -34,7 +34,7 @@ endif
 " Colors {{{1
 let s:bg              = { 'gui': '#212524', 'cterm': '0'  }
 let s:bg_light        = { 'gui': '#2B302B', 'cterm': '10' }
-let s:bg_sel          = { 'gui': '#32362E', 'cterm': '11' }
+let s:bg_sel          = { 'gui': '#3C4137', 'cterm': '11' }
 let s:fg_com          = { 'gui': '#6A6A5B', 'cterm': '8'  }
 let s:fg_dark         = { 'gui': '#5F785C', 'cterm': '12' }
 let s:fg              = { 'gui': '#ADAD9B', 'cterm': '7'  }
