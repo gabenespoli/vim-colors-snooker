@@ -268,6 +268,9 @@ else
   call s:h('criticMeta',            {'bg': s:bg, 'fg': s:pink})
 endif
 
+" Sh/Bash {{{2
+hi! link shShellVariables            Identifier
+
 " Python {{{2
 " hi! link pythonCommentTitle         Title
 hi! link pythonFunction             Typedef
