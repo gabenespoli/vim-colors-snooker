@@ -325,6 +325,10 @@ call s:h('SignifyLineChangeDelete', {'fg': s:bg, 'bg': s:brown})
 call s:h('diffAdded',               {'fg': s:green})
 call s:h('diffRemoved',             {'fg': s:red})
 
+" GV.vim {{{2
+hi! link gvMeta                     Type
+hi! link gvAuthor                   SpecialChar
+
 " DiffChar {{{2
 hi! link dcDiffDelPos               Normal
 hi! link dcDiffAddPos               DiffDelete
