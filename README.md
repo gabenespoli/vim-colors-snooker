@@ -18,7 +18,7 @@ For terminal vim, set your terminal colors to the following values for the dark 
 
 | Terminal Code | Snooker Color  | Base16 Color           | Hex    | Function                       |
 | ------------- | -------------- | ---------------------- | ------ | -----------------------------  |
-| 0             |                | background             | 212524 |                                |
+| 0             |                | background             | 1B1F1E |                                |
 | 10            |                | background (light)     | 2B302B | status bars                    |
 | 11            |                | background (selection) | 3C4137 | selection background           |
 | 8             |                | foreground (comments)  | 645E50 | comments                       |

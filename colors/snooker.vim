@@ -32,7 +32,7 @@ if !exists('g:snooker_color_cursor')
 endif
 
 " Colors {{{1
-let s:bg              = { 'gui': '#212524', 'cterm': '0'  }
+let s:bg              = { 'gui': '#1B1F1E', 'cterm': '0'  }
 let s:bg_light        = { 'gui': '#2B302B', 'cterm': '10' }
 let s:bg_sel          = { 'gui': '#3C4137', 'cterm': '11' }
 let s:fg_com          = { 'gui': '#6A6A5B', 'cterm': '8'  }
