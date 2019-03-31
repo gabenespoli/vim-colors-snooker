@@ -275,6 +275,7 @@ hi! link shShellVariables            Identifier
 " hi! link pythonCommentTitle         Title
 hi! link pythonFunction             Typedef
 hi! link pythonBuiltinFunc          Function
+hi! link pythonBuiltinObj           Function
 
 " Octave/Matlab {{{2
 hi! link octaveDelimiter            Delimiter
