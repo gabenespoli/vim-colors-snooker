@@ -303,6 +303,9 @@ hi! link goPackage                  Include
 hi! link goImport                   Include
 
 " Plugin Groups {{{1
+" Fugitive {{{2
+call s:h('fugitiveModifier', {'fg': s:red})
+
 " GitGutter / Signify {{{2
 call s:h('GitGutterAdd',            {'fg': s:green})
 call s:h('GitGutterChange',         {'fg': s:yellow})
