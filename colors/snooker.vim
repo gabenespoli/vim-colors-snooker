@@ -52,6 +52,7 @@ let s:brown           = { 'gui': '#B98036', 'cterm': '9'  }
 let s:blue            = { 'gui': '#0094CF', 'cterm': '4'  }
 let s:pink            = { 'gui': '#DF7376', 'cterm': '5'  }
 let s:table           = { 'gui': '#5D4124', 'cterm': '14' }
+let s:none            = { 'gui': 'NONE', 'cterm': 'NONE' }
 
 if g:snooker_spell_undercurl == 1
   let s:sp_un      = 'undercurl'
