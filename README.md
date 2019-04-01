@@ -39,7 +39,9 @@ For terminal vim, set your terminal colors to the following values for the dark 
 
 `g:snooker_terminal_italics`: Default 0, only affects terminal vim. Set to 1 if your terminal supports italics. This is really only for comments.
 
-`g:snooker_spell_undercurl`: Default 1, only affects gui vim. Set to 0 to use an underline instead of an undercurl for spelling highlights.
+`g:snooker_spell_undercurl`: Default 0, only affects gui vim. Set to 1 to use an undercurl instead of an underline for spelling highlights.
+
+`g:snooker_gui_color_undercurl`: Default 0, only affects gui vim. Set to 1 to color the underline/undercurl for spelling highlights.
 
 `g:snooker_high_contrast`: Default 1 to enable the "inverse" look for diffs and some other elements (where the background is red and the foreground is the background color, for example). Set to 0 to make these elements more subtle by using the "non-inverse" version. A function is provided (see below) to toggle this option.
 
