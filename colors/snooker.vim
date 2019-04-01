@@ -147,7 +147,7 @@ call s:h('MoreMsg',       {'fg': s:fg_com})
 hi! link ModeMsg MoreMsg
 
 call s:h('LineNr',        {'fg': s:fg_com})
-call s:h('CursorLineNr',  {'fg': s:fg})
+call s:h('CursorLineNr',  {'fg': s:fg, 'bg': s:bg_light})
 call s:h('Question',      {'fg': s:red})
 call s:h('StatusLine',    {'fg': s:fg_bright, 'bg': s:fg_com})
 call s:h('Conceal',       {'fg': s:fg})
