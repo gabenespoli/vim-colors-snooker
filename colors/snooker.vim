@@ -20,7 +20,11 @@ if !exists('g:snooker_terminal_italics')
 endif
 
 if !exists('g:snooker_spell_undercurl')
-  let g:snooker_spell_undercurl = 1
+  let g:snooker_spell_undercurl = 0
+endif
+
+if !exists('g:snooker_gui_color_undercurl')
+  let g:snooker_gui_color_undercurl = 0
 endif
 
 if !exists('g:snooker_high_contrast')
@@ -169,16 +173,16 @@ else
   call s:h('DiffText',      {'fg': s:yellow, 'gui': 'none', 'cterm': 'none'})
 endif
 
-if has('gui_running')
+if has('gui_running') && g:snooker_gui_color_undercurl
   call s:h('SpellBad',    {'gui': s:sp_un, 'sp': s:red})
   call s:h('SpellCap',    {'gui': s:sp_un, 'sp': s:pink})
   call s:h('SpellRare',   {'gui': s:sp_un, 'sp': s:cyan})
   call s:h('SpellLocal',  {'gui': s:sp_un, 'sp': s:yellow})
 else
-  call s:h('SpellBad',    {'cterm': s:sp_un})
-  call s:h('SpellCap',    {'cterm': s:sp_un})
-  call s:h('SpellRare',   {'cterm': s:sp_un})
-  call s:h('SpellLocal',  {'cterm': s:sp_un})
+  call s:h('SpellBad',    {'cterm': s:sp_un, 'gui': s:sp_un})
+  call s:h('SpellCap',    {'cterm': s:sp_un, 'gui': s:sp_un})
+  call s:h('SpellRare',   {'cterm': s:sp_un, 'gui': s:sp_un})
+  call s:h('SpellLocal',  {'cterm': s:sp_un, 'gui': s:sp_un})
 endif
 
 call s:h('Pmenu',         {'fg': s:fg, 'bg': s:bg_light})
