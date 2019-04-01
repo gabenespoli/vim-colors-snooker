@@ -270,7 +270,7 @@ hi! link criticHighlighter          DiffText
 if g:snooker_high_contrast
   call s:h('criticMeta',            {'bg': s:pink, 'fg': s:bg})
 else
-  call s:h('criticMeta',            {'bg': s:bg, 'fg': s:pink})
+  call s:h('criticMeta',            {'bg': s:none, 'fg': s:pink})
 endif
 
 " Sh/Bash {{{2
