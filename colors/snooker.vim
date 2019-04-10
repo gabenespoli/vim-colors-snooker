@@ -149,9 +149,9 @@ hi! link ModeMsg MoreMsg
 call s:h('LineNr',        {'fg': s:fg_com})
 call s:h('CursorLineNr',  {'fg': s:fg, 'bg': s:bg_light})
 call s:h('Question',      {'fg': s:red})
-call s:h('StatusLine',    {'fg': s:fg_bright, 'bg': s:fg_com})
+call s:h('StatusLine',    {'fg': s:fg, 'bg': s:bg_light})
 call s:h('Conceal',       {'fg': s:fg})
-call s:h('StatusLineNC',  {'fg': s:bg, 'bg': s:fg_com})
+call s:h('StatusLineNC',  {'fg': s:fg_com, 'bg': s:bg_light})
 call s:h('VertSplit',     {'bg': s:bg, 'fg': s:bg})
 call s:h('Title',         {'fg': s:fg_light, 'gui': 'bold,italic', 'cterm': 'bold,italic'})
 call s:h('Visual',        {'bg': s:bg_sel})
@@ -190,8 +190,8 @@ call s:h('Pmenu',         {'fg': s:fg, 'bg': s:bg_light})
 hi! link PmenuSel         Cursor
 call s:h('PmenuSbar',     {'fg': s:fg, 'bg': s:bg_light})
 call s:h('PmenuThumb',    {'fg': s:fg, 'bg': s:bg_light})
-call s:h('TabLine',       {'fg': s:bg, 'bg': s:fg_com})
-call s:h('TabLineSel',    {'fg': s:fg_bright, 'bg': s:fg_com})
+call s:h('TabLine',       {'fg': s:fg_com, 'bg': s:bg_light})
+call s:h('TabLineSel',    {'fg': s:fg, 'bg': s:bg_light})
 call s:h('TabLineFill',   {'fg': s:fg, 'bg': s:bg})
 call s:h('CursorColumn',  {'bg': s:bg_light})
 call s:h('CursorLine',    {'bg': s:bg_light})
@@ -208,11 +208,11 @@ if has('nvim')
 endif
 
 " my own extras {{{2
-call s:h('Modified',      {'fg': s:yellow, 'bg': s:fg_com})
+call s:h('Modified',      {'fg': s:yellow, 'bg': s:bg_light})
 call s:h('ReadOnly',      {'fg': s:brown,  'bg': s:fg_com})
 call s:h('TodoStatus',    {'bg': s:pink,   'fg': s:fg_bright})
 call s:h('ErrorStatus',   {'bg': s:red,    'fg': s:fg_bright})
-call s:h('TabMod',        {'fg': s:yellow, 'bg': s:fg_com})
+hi! link TabMod           Modified
 hi! link TabModSel        TabMod
 hi! link markdownPandocCitation pandocCiteKey
 call s:h('Italic',        {'fg': s:fg_light, 'gui': 'italic', 'cterm': 'italic'})
@@ -360,7 +360,7 @@ hi! link CtrlPBufferHidMod          CtrlPBufferHid
 hi! link CtrlPBufferVisMod          CtrlPBufferVis
 hi! link CtrlPBufferCurMod          CtrlPBufferCur
 hi! link CtrlPBufferPath            Comment
-call s:h('CtrlPMode1',              {'fg': s:yellow, 'bg': s:fg_com})
+hi! link CtrlPMode1                 Modified
 hi! link CtrlPMode2                 StatusLine
 call s:h('CtrlPStats',              {'fg': s:red, 'bg': s:fg_com})
 
