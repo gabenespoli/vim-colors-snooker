@@ -274,15 +274,6 @@ else
   call s:h('criticMeta',            {'bg': s:none, 'fg': s:pink})
 endif
 
-" Sh/Bash {{{2
-hi! link shShellVariables            Identifier
-
-" Python {{{2
-" hi! link pythonCommentTitle         Title
-hi! link pythonFunction             Typedef
-hi! link pythonBuiltinFunc          Function
-hi! link pythonBuiltinObj           Function
-
 " Octave/Matlab {{{2
 hi! link octaveDelimiter            Delimiter
 hi! link octaveSemicolon            Normal
