@@ -396,6 +396,10 @@ hi! link TagbarType                 Comment
 hi link notesTitle                  Title
 hi link notesAtxHeading             Title
 hi link notesAtxMarker              Title
+hi link notesTodo                   Todo
+hi link notesXXX                    notesTodo
+hi link notesFixMe                  notesTodo
+hi link notesDoneMarker             Statement
 
 " MattesGroeger/vim-bookmarks {{{2
 hi link BookmarkSign                Statement
