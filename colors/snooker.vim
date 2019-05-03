@@ -321,6 +321,16 @@ hi! link jsObjectKey                Identifier
 hi! link goPackage                  Include
 hi! link goImport                   Include
 
+" vim-json {{{2
+hi! link jsonNumError					      Type
+hi! link jsonCommentError				    jsonNumError
+hi! link jsonSemicolonError			    jsonNumError
+hi! link jsonTrailingCommaError		  jsonNumError
+hi! link jsonMissingCommaError		  jsonNumError
+hi! link jsonStringSQError				  jsonNumError
+hi! link jsonNoQuotesError				  jsonNumError
+hi! link jsonTripleQuotesError		  jsonNumError
+
 " Plugin Groups {{{1
 " Fugitive {{{2
 call s:h('fugitiveModifier', {'fg': s:red})
