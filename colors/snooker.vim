@@ -258,6 +258,7 @@ call s:h('markdownUrl',             {'fg': s:cyan, 'gui': 'italic', 'cterm': 'it
 " hi! link markdownUrlTitle           pandocLinkTip
 hi! link markdownUrlTitleDelimiter  markdownUrlTitle
 hi! link markdownCode               Constant
+call s:h('markdownCodeDelimiter',   {'fg': s:fg_light})
 
 " Pandoc Markdown {{{2
 hi! link pandocAtxStart             markdownHeadingDelimiter
