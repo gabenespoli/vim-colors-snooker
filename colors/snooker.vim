@@ -54,6 +54,26 @@ let s:pink            = { 'gui': '#DF7376', 'cterm': '5'  }
 let s:table           = { 'gui': '#5D4124', 'cterm': '14' }
 let s:none            = { 'gui': 'NONE', 'cterm': 'NONE' }
 
+if exists('g:snooker_sumach') && g:snooker_sumach == 1
+  let s:bg              = { 'gui': '#121212', 'cterm': '0'  }
+  let s:bg_light        = { 'gui': '#282828', 'cterm': '10' }
+  let s:bg_sel          = { 'gui': '#3a3a3a', 'cterm': '11' }
+  let s:fg_com          = { 'gui': '#585858', 'cterm': '8'  }
+  let s:fg_dark         = { 'gui': '#767676', 'cterm': '12' }
+  let s:fg              = { 'gui': '#a0a0a0', 'cterm': '7'  }
+  let s:fg_light        = { 'gui': '#ada986', 'cterm': '13' }
+  let s:fg_bright       = { 'gui': '#d0c6bc', 'cterm': '15' }
+  let s:green           = { 'gui': '#4b9b24', 'cterm': '2'  }
+  let s:red             = { 'gui': '#d01e1e', 'cterm': '1'  }
+  let s:yellow          = { 'gui': '#d79d33', 'cterm': '3'  }
+  let s:cyan            = { 'gui': '#35a471', 'cterm': '6'  }
+  let s:brown           = { 'gui': '#a76024', 'cterm': '9'  }
+  let s:blue            = { 'gui': '#007cd2', 'cterm': '4'  }
+  let s:pink            = { 'gui': '#b95684', 'cterm': '5'  }
+  let s:table           = { 'gui': '#82499e', 'cterm': '14' }
+  let s:none            = { 'gui': 'NONE', 'cterm': 'NONE' }
+endif
+
 if g:snooker_spell_undercurl == 1
   let s:sp_un      = 'undercurl'
 else
