@@ -393,6 +393,14 @@ call s:h('netrwClassify',           {'fg': s:fg_com})
 call s:h('netrwSymLink',            {'fg': s:cyan})
 call s:h('netrwExe',                {'fg': s:pink})
 
+" vim-dirvish-git
+hi link DirvishGitModified Type
+hi link DirvishGitStaged Statement
+hi link DirvishGitRenamed Identifier
+hi link DirvishGitUnmerged Debug
+hi link DirvishGitIgnored Comment
+hi link DirvishGitUntracked Operator
+
 " NERDTree {{{2
 call s:h('NERDTreeExecFile',        {'fg': s:pink})
 hi! link NERDTreeLinkFile           netrwSymLink
