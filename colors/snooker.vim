@@ -323,14 +323,9 @@ hi! link goPackage                  Include
 hi! link goImport                   Include
 
 " vim-json {{{2
-hi! link jsonNumError					      Type
-hi! link jsonCommentError				    jsonNumError
-hi! link jsonSemicolonError			    jsonNumError
-hi! link jsonTrailingCommaError		  jsonNumError
-hi! link jsonMissingCommaError		  jsonNumError
-hi! link jsonStringSQError				  jsonNumError
-hi! link jsonNoQuotesError				  jsonNumError
-hi! link jsonTripleQuotesError		  jsonNumError
+call s:h('jsonKeyword',             {'fg': s:blue})
+call s:h('jsonNull',                {'fg': s:brown})
+call s:h('jsonBraces',              {'fg': s:fg})
 
 " Plugin Groups {{{1
 " Fugitive {{{2
