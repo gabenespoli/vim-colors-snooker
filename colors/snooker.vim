@@ -253,8 +253,8 @@ hi! link markdownBoldDelimiter      Comment
 hi! link markdownBoldItalicDelimiter Comment
 hi! link markdownLinkDelimiter      Comment
 hi! link markdownLinkTextDelimiter  Comment
-call s:h('markdownLinkText',        {'fg': s:pink, 'gui': 'italic', 'cterm': 'italic'})
-call s:h('markdownUrl',             {'fg': s:cyan, 'gui': 'italic', 'cterm': 'italic'})
+call s:h('markdownLinkText',        {'fg': s:blue, 'gui': 'italic', 'cterm': 'italic'})
+call s:h('markdownUrl',             {'fg': s:brown, 'gui': 'italic', 'cterm': 'italic'})
 " hi! link markdownUrlTitle           pandocLinkTip
 hi! link markdownUrlTitleDelimiter  markdownUrlTitle
 hi! link markdownCode               Constant
