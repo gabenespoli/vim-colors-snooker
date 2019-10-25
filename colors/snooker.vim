@@ -329,7 +329,15 @@ call s:h('jsonBraces',              {'fg': s:fg})
 
 " Plugin Groups {{{1
 " Fugitive {{{2
-call s:h('fugitiveModifier', {'fg': s:red})
+call s:h('fugitiveUnstagedModifier', {'fg': s:red})
+call s:h('fugitiveStagedModifier', {'fg': s:green})
+hi! link fugitiveHeading            Title
+hi! link fugitiveHeader             Title
+hi! link fugitiveStagedHeading      Title
+hi! link fugitiveUnstagedHeading    Title
+hi! link fugitiveUntrackedHeading   Title
+hi! link fugitiveSymbolicRef        Statement
+hi! link fugitiveCount              Todo
 
 " GitGutter / Signify {{{2
 call s:h('GitGutterAdd',            {'fg': s:green})
