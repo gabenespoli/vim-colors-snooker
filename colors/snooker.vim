@@ -240,6 +240,10 @@ call s:h('Bold',          {'fg': s:fg_light, 'gui': 'bold', 'cterm': 'bold'})
 call s:h('BoldItalic',    {'fg': s:fg_light, 'gui': 'bold,italic', 'cterm': 'bold,italic'})
 
 " Syntaxes {{{1
+
+" Shell {{{2
+hi! link shQuote String
+
 " Markdown {{{2
 hi! link markdownHeadingDelimiter   Title
 " call s:h('markdownItalic',          {'fg': s:fg_light, 'gui': 'italic', 'cterm': 'italic'})
@@ -365,6 +369,7 @@ call s:h('diffRemoved',             {'fg': s:red})
 hi! link gvTag                      Tag
 hi! link gvGitHub                   Tag
 hi! link gvJira                     Tag
+hi! link gvAuthor                   Comment
 
 " DiffChar {{{2
 hi! link dcDiffDelPos               Normal
@@ -390,6 +395,8 @@ hi! link CtrlPBufferPath            Comment
 hi! link CtrlPMode1                 Modified
 hi! link CtrlPMode2                 StatusLine
 call s:h('CtrlPStats',              {'fg': s:red, 'bg': s:fg_com})
+hi! link CtrlPTagKind               Tag
+hi! link CtrlPqfLineCol             Normal
 
 " netrw {{{2
 call s:h('netrwClassify',           {'fg': s:fg_com})
@@ -409,11 +416,12 @@ call s:h('NERDTreeExecFile',        {'fg': s:pink})
 hi! link NERDTreeLinkFile           netrwSymLink
 hi! link NERDTreeLinkDir            netrwSymLink
 call s:h('NERDTreeLinkTarget',      {'fg': s:fg})
-hi! link NERDTreeFlags              Delimiter
+call s:h('NERDTreeFlags',           {'fg': s:fg_com})
 
 " Tagbar {{{2
 hi! link TagbarScope                Normal
 hi! link TagbarType                 Comment
+hi! link TagbarFoldIcon             Tag
 
 " xolox/vim-notes {{{2
 hi link notesTitle                  Title
