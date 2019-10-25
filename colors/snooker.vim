@@ -146,7 +146,7 @@ hi! link Debug            Special
 call s:h('Underlined',    {'gui': 'underline', 'cterm': 'underline'})
 call s:h('Ignore',        {'fg': s:bg_sel})
 call s:h('Error',         {'fg': s:red})
-call s:h('Todo',          {'fg': s:fg_bright, 'bg': s:pink})
+call s:h('Todo',          {'fg': s:pink})
 
 " Extra Groups {{{1
 " ordered according to `:help hitest.vim`
