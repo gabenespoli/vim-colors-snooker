@@ -437,3 +437,11 @@ hi link BookmarkSign                Statement
 hi link BookmarkAnnotationSign      Statement
 hi link BookmarkLine                Statement
 hi link BookmarkAnnotationLine      Statement
+
+" coc.nvim
+call s:h('CocErrorSign',            {'fg': s:red})
+call s:h('CocWarningSign',          {'fg': s:brown})
+call s:h('CocInfoSign',             {'fg': s:yellow})
+call s:h('CocHintSign',             {'fg': s:blue})
+call s:h('CocSelectedText',         {'fg': s:red})
+call s:h('CocCodeLens',             {'fg': s:fg_light})
