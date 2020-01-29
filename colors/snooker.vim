@@ -366,10 +366,18 @@ call s:h('diffAdded',               {'fg': s:green})
 call s:h('diffRemoved',             {'fg': s:red})
 
 " GV.vim {{{2
+hi! link gvAuthor                   Comment
+hi! link gvSha                      Number
+hi! link gvDate                     Comment
+hi! link gvDelimiter                Type
+hi! link gvMeta                     Conditional
+hi! link gvHead                     Type
+hi! link gvFeature                  Label
+hi! link gvOrigin                   Identifier
+hi! link gvRelease                  Tag
 hi! link gvTag                      Tag
 hi! link gvGitHub                   Tag
 hi! link gvJira                     Tag
-hi! link gvAuthor                   Comment
 
 " DiffChar {{{2
 hi! link dcDiffDelPos               Normal
