@@ -40,7 +40,7 @@ let s:bg              = { 'gui': '#1B1F1E', 'cterm': '0'  }
 let s:bg_light        = { 'gui': '#2B302B', 'cterm': '10' }
 let s:bg_sel          = { 'gui': '#3C4137', 'cterm': '11' }
 let s:fg_com          = { 'gui': '#6A6A5B', 'cterm': '8'  }
-let s:fg_dark         = { 'gui': '#5F785C', 'cterm': '12' }
+let s:fg_dark         = { 'gui': '#5B6A5B', 'cterm': '12' }
 let s:fg              = { 'gui': '#ADAD9B', 'cterm': '7'  }
 let s:fg_light        = { 'gui': '#CDC08B', 'cterm': '13' }
 let s:fg_bright       = { 'gui': '#CCCCCC', 'cterm': '15' }
@@ -315,6 +315,10 @@ hi! link matlabCellCommentIndented  Title
 hi! link vimBracket                 Special
 hi! link vimCommentTitle            Title
 
+" python {{{2
+hi! link pythonAttribute            Type
+" hi! link pythonBuiltin              Type
+
 " javascript {{{2
 hi! link jsBrackets                 Delimiter
 hi! link jsObjectBraces             Delimiter
@@ -342,6 +346,8 @@ hi! link fugitiveUnstagedHeading    Title
 hi! link fugitiveUntrackedHeading   Title
 hi! link fugitiveSymbolicRef        Statement
 hi! link fugitiveCount              Todo
+hi! link diffLine                   Tag
+hi! link diffSubName                Identifier
 
 " GitGutter / Signify {{{2
 call s:h('GitGutterAdd',            {'fg': s:green})
@@ -367,17 +373,16 @@ call s:h('diffRemoved',             {'fg': s:red})
 
 " GV.vim {{{2
 hi! link gvAuthor                   Comment
-hi! link gvSha                      Number
+call s:h('gvSha',                   {'fg': s:blue})
 hi! link gvDate                     Comment
 hi! link gvDelimiter                Type
 hi! link gvMeta                     Conditional
-hi! link gvHead                     Type
+call s:h('gvHead',                  {'fg': s:pink})
 hi! link gvFeature                  Label
-hi! link gvOrigin                   Identifier
-hi! link gvRelease                  Tag
+call s:h('gvOrigin',                {'fg': s:cyan})
 hi! link gvTag                      Tag
-hi! link gvGitHub                   Tag
 hi! link gvJira                     Tag
+hi! link gvGitHub                   Tag
 
 " DiffChar {{{2
 hi! link dcDiffDelPos               Normal
@@ -453,3 +458,124 @@ call s:h('CocInfoSign',             {'fg': s:yellow})
 call s:h('CocHintSign',             {'fg': s:blue})
 call s:h('CocSelectedText',         {'fg': s:red})
 call s:h('CocCodeLens',             {'fg': s:fg_light})
+
+" " LeaderF {{{2
+" let g:Lf_StlPalette = {
+"         \   'stlName': {
+"         \       'gui': 'bold',
+"         \       'font': 'NONE',
+"         \       'guifg': '#2F5C00',
+"         \       'guibg': '#BAFFA3',
+"         \       'cterm': 'bold',
+"         \       'ctermfg': s:bg.cterm,
+"         \       'ctermbg': s:green.cterm
+"         \   },
+"         \   'stlCategory': {
+"         \       'gui': 'NONE',
+"         \       'font': 'NONE',
+"         \       'guifg': '#000000',
+"         \       'guibg': '#F28379',
+"         \       'cterm': 'NONE',
+"         \       'ctermfg': s:bg.cterm,
+"         \       'ctermbg': s:pink.cterm
+"         \   },
+"         \   'stlNameOnlyMode': {
+"         \       'gui': 'NONE',
+"         \       'font': 'NONE',
+"         \       'guifg': '#000000',
+"         \       'guibg': '#E8ED51',
+"         \       'cterm': 'NONE',
+"         \       'ctermfg': s:bg.cterm,
+"         \       'ctermbg': s:yellow.cterm
+"         \   },
+"         \   'stlFullPathMode': {
+"         \       'gui': 'NONE',
+"         \       'font': 'NONE',
+"         \       'guifg': '#000000',
+"         \       'guibg': '#AAAAFF',
+"         \       'cterm': 'NONE',
+"         \       'ctermfg': s:bg.cterm,
+"         \       'ctermbg': s:blue.cterm
+"         \   },
+"         \   'stlFuzzyMode': {
+"         \       'gui': 'NONE',
+"         \       'font': 'NONE',
+"         \       'guifg': '#000000',
+"         \       'guibg': '#E8ED51',
+"         \       'cterm': 'NONE',
+"         \       'ctermfg': s:bg.cterm,
+"         \       'ctermbg': s:yellow.cterm
+"         \   },
+"         \   'stlRegexMode': {
+"         \       'gui': 'NONE',
+"         \       'font': 'NONE',
+"         \       'guifg': '#000000',
+"         \       'guibg': '#7FECAD',
+"         \       'cterm': 'NONE',
+"         \       'ctermfg': s:bg.cterm,
+"         \       'ctermbg': s:green.cterm
+"         \   },
+"         \   'stlCwd': {
+"         \       'gui': 'NONE',
+"         \       'font': 'NONE',
+"         \       'guifg': '#EBFFEF',
+"         \       'guibg': '#606168',
+"         \       'cterm': 'NONE',
+"         \       'ctermfg': s:cyan.cterm,
+"         \       'ctermbg': s:bg.cterm
+"         \   },
+"         \   'stlBlank': {
+"         \       'gui': 'NONE',
+"         \       'font': 'NONE',
+"         \       'guifg': 'NONE',
+"         \       'guibg': '#3B3E4C',
+"         \       'cterm': 'NONE',
+"         \       'ctermfg': 'NONE',
+"         \       'ctermbg': s:bg_light.cterm
+"         \   },
+"         \   'stlLineInfo': {
+"         \       'gui': 'NONE',
+"         \       'font': 'NONE',
+"         \       'guifg': '#000000',
+"         \       'guibg': '#EBFFEF',
+"         \       'cterm': 'NONE',
+"         \       'ctermfg': s:bg.cterm,
+"         \       'ctermbg': s:cyan.cterm
+"         \   },
+"         \   'stlTotal': {
+"         \       'gui': 'NONE',
+"         \       'font': 'NONE',
+"         \       'guifg': '#000000',
+"         \       'guibg': '#BCDC5C',
+"         \       'cterm': 'NONE',
+"         \       'ctermfg': s:bg.cterm,
+"         \       'ctermbg': s:green.cterm
+"         \   }
+"         \ }
+
+" let g:Lf_PopupPalette = {
+"     \  'light': {
+"     \      'Lf_hl_match': {
+"     \                'gui': 'NONE',
+"     \                'font': 'NONE',
+"     \                'guifg': 'NONE',
+"     \                'guibg': '#303136',
+"     \                'cterm': 'NONE',
+"     \                'ctermfg': 'NONE',
+"     \                'ctermbg': '236'
+"     \              },
+"     \      'Lf_hl_cursorline': {
+"     \                'gui': 'NONE',
+"     \                'font': 'NONE',
+"     \                'guifg': 'NONE',
+"     \                'guibg': '#303136',
+"     \                'cterm': 'NONE',
+"     \                'ctermfg': 'NONE',
+"     \                'ctermbg': '236'
+"     \              },
+"     \      },
+"     \  'dark': {
+"     \         ...
+"     \         ...
+"     \      }
+"     \  }
