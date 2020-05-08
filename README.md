@@ -14,26 +14,28 @@ Apply the colorscheme:
 
 ### in your terminal
 
-For terminal vim, set your terminal colors to the following values for the dark or light palette. This palette follows [Base16](https://github.com/chriskempson/base16). If you are using iTerm you can get the .itermcolors file from [this repo](https://github.com/gabenespoli/iterm-color-palettes).
+For terminal vim, set your terminal colors to the following values for the dark or light palette.
 
-| Terminal Code | Snooker Color  | Base16 Color           | Hex    | Function                       |
+| Terminal Code | Snooker Color  | General Function       | Hex    | Specific Function              |
 | ------------- | -------------- | ---------------------- | ------ | -----------------------------  |
-| 0             |                | background             | 1B1F1E |                                |
-| 10            |                | background (light)     | 2B302B | status bars                    |
-| 11            |                | background (selection) | 3C4137 | selection background           |
-| 8             |                | foreground (comments)  | 645E50 | comments                       |
-| 12            |                | foreground (darker)    | 5F785C |                                |
-| 7             |                | foreground             | ADAD9B |                                |
-| 13            |                | foreground (light)     | CDC08B | selection foreground, bold     |
-| 15            | cue ball       | foreground (bright)    | FCEDAB | titles, status bar foreground  |
-| 2             | baize          | green                  | 25C528 | statement, keyword             |
+| background    | black ball     | background             | 121615 |                                |
+| 0             |                | background (light)     | 2B302B | status bars                    |
+| foreground    |                | foreground             | ADAD9B |                                |
+| 8             |                | foreground (comments)  | 645E50 | comments, selection background |
+| 7             | yellowed white | foreground (light)     | CDC08B | cursor, bold                   |
 | 1             | red balls      | red                    | E52E1A | error, operator, delimiter     |
-| 3             | yellow ball    | yellow                 | EBBB2B | type                           |
-| 6             | green ball     | cyan                   | 21C296 | constant, string               |
-| 9             | brown ball     | brown                  | B98036 | special                        |
+| 2             | baize          | green                  | 25C528 | statement, keyword             |
+| 3             | yellow ball    | yellow                 | EBBB2B | type, search background        |
 | 4             | blue ball      | blue                   | 0094CF | variable, identifier, function |
 | 5             | pink ball      | pink                   | DF7376 | preproc, include               |
-| 14            |                | table                  | 5D4124 | todo                           |
+| 6             | green ball     | cyan                   | 21C296 | constant, string               |
+| 9             | brown ball     | brown                  | B98036 | special                        |
+| 10            | (baize)        | (unused)               | 25C528 | (same as 2)                    |
+| 11            | (yellow ball)  | (unused)               | EBBB2B | (same as 3)                    |
+| 12            | (blue ball)    | (unused)               | 0094CF | (same as 4)                    |
+| 13            | (pink ball)    | (unused)               | DF7376 | (same as 5)                    |
+| 14            | (green ball)   | (unused)               | 21C296 | (same as 5)                    |
+| 15            | cue ball       | foreground (bright)    | FCEDAB | selection foreground, titles   |
 
 ## Options
 

@@ -36,42 +36,36 @@ if !exists('g:snooker_color_cursor')
 endif
 
 " Colors {{{1
-let s:bg              = { 'gui': '#1B1F1E', 'cterm': '0'  }
-let s:bg_light        = { 'gui': '#2B302B', 'cterm': '10' }
-let s:bg_sel          = { 'gui': '#3C4137', 'cterm': '11' }
-let s:fg_com          = { 'gui': '#6A6A5B', 'cterm': '8'  }
-let s:fg_dark         = { 'gui': '#5B6A5B', 'cterm': '12' }
-let s:fg              = { 'gui': '#ADAD9B', 'cterm': '7'  }
-let s:fg_light        = { 'gui': '#CDC08B', 'cterm': '13' }
-let s:fg_bright       = { 'gui': '#CCCCCC', 'cterm': '15' }
-let s:green           = { 'gui': '#25C528', 'cterm': '2'  }
-let s:red             = { 'gui': '#E52E1A', 'cterm': '1'  }
-let s:yellow          = { 'gui': '#EBBB2B', 'cterm': '3'  }
-let s:cyan            = { 'gui': '#21C296', 'cterm': '6'  }
-let s:brown           = { 'gui': '#B98036', 'cterm': '9'  }
-let s:blue            = { 'gui': '#0094CF', 'cterm': '4'  }
-let s:pink            = { 'gui': '#DF7376', 'cterm': '5'  }
-let s:table           = { 'gui': '#5D4124', 'cterm': '14' }
-let s:none            = { 'gui': 'NONE', 'cterm': 'NONE' }
+let s:bg              = { 'gui': '#121615', 'cterm': 'NONE' }
+let s:bg_light        = { 'gui': '#2B302B', 'cterm': '0'    }
+let s:fg_com          = { 'gui': '#6A6A5B', 'cterm': '8'    }
+let s:fg              = { 'gui': '#ADAD9B', 'cterm': 'NONE' }
+let s:fg_light        = { 'gui': '#CDC08B', 'cterm': '7'    }
+let s:fg_bright       = { 'gui': '#E5E5D2', 'cterm': '15'   }
+let s:red             = { 'gui': '#E52E1A', 'cterm': '1'    }
+let s:green           = { 'gui': '#25C528', 'cterm': '2'    }
+let s:yellow          = { 'gui': '#EBBB2B', 'cterm': '3'    }
+let s:blue            = { 'gui': '#0094CF', 'cterm': '4'    }
+let s:pink            = { 'gui': '#DF7376', 'cterm': '5'    }
+let s:cyan            = { 'gui': '#21C296', 'cterm': '6'    }
+let s:brown           = { 'gui': '#B98036', 'cterm': '9'    }
+let s:none            = { 'gui': 'NONE',    'cterm': 'NONE' }
 
 if exists('g:snooker_sumach') && g:snooker_sumach == 1
-  let s:bg              = { 'gui': '#121212', 'cterm': '0'  }
-  let s:bg_light        = { 'gui': '#282828', 'cterm': '10' }
-  let s:bg_sel          = { 'gui': '#3a3a3a', 'cterm': '11' }
-  let s:fg_com          = { 'gui': '#585858', 'cterm': '8'  }
-  let s:fg_dark         = { 'gui': '#767676', 'cterm': '12' }
-  let s:fg              = { 'gui': '#a0a0a0', 'cterm': '7'  }
-  let s:fg_light        = { 'gui': '#ada986', 'cterm': '13' }
-  let s:fg_bright       = { 'gui': '#d0c6bc', 'cterm': '15' }
-  let s:green           = { 'gui': '#4b9b24', 'cterm': '2'  }
-  let s:red             = { 'gui': '#d01e1e', 'cterm': '1'  }
-  let s:yellow          = { 'gui': '#d79d33', 'cterm': '3'  }
-  let s:cyan            = { 'gui': '#35a471', 'cterm': '6'  }
-  let s:brown           = { 'gui': '#a76024', 'cterm': '9'  }
-  let s:blue            = { 'gui': '#007cd2', 'cterm': '4'  }
-  let s:pink            = { 'gui': '#b95684', 'cterm': '5'  }
-  let s:table           = { 'gui': '#82499e', 'cterm': '14' }
-  let s:none            = { 'gui': 'NONE', 'cterm': 'NONE' }
+  let s:bg              = { 'gui': '#121212', 'cterm': 'NONE' }
+  let s:bg_light        = { 'gui': '#282828', 'cterm': '0'    }
+  let s:fg_com          = { 'gui': '#585858', 'cterm': '8'    }
+  let s:fg              = { 'gui': '#a0a0a0', 'cterm': 'NONE' }
+  let s:fg_light        = { 'gui': '#ada986', 'cterm': '7'    }
+  let s:fg_bright       = { 'gui': '#d0c6bc', 'cterm': '15'   }
+  let s:red             = { 'gui': '#d01e1e', 'cterm': '1'    }
+  let s:green           = { 'gui': '#4b9b24', 'cterm': '2'    }
+  let s:yellow          = { 'gui': '#d79d33', 'cterm': '3'    }
+  let s:blue            = { 'gui': '#007cd2', 'cterm': '4'    }
+  let s:pink            = { 'gui': '#b95684', 'cterm': '5'    }
+  let s:cyan            = { 'gui': '#35a471', 'cterm': '6'    }
+  let s:brown           = { 'gui': '#a76024', 'cterm': '9'    }
+  let s:none            = { 'gui': 'NONE',    'cterm': 'NONE' }
 endif
 
 if g:snooker_spell_undercurl == 1
@@ -101,9 +95,9 @@ endfunction
 
 call s:h('Normal',        {'fg': s:fg})
 if g:snooker_color_cursor
-  call s:h('Cursor',      {'bg': s:fg_bright, 'fg': s:bg })
+  call s:h('Cursor',      {'fg': s:fg_light, 'bg': s:bg, 'gui': 'reverse', 'cterm': 'reverse'})
 else
-  call s:h('Cursor',      {'bg': s:fg, 'fg': s:bg })
+  call s:h('Cursor',      {'fg': s:fg, 'bg': s:bg, 'gui': 'reverse', 'cterm': 'reverse'})
 endif
 call s:h('Comment',       {'fg': s:fg_com, 'gui': 'italic', 'cterm': 'italic'})
 
@@ -144,7 +138,7 @@ hi! link SpecialComment   Special
 hi! link Debug            Special
 
 call s:h('Underlined',    {'gui': 'underline', 'cterm': 'underline'})
-call s:h('Ignore',        {'fg': s:bg_sel})
+call s:h('Ignore',        {'fg': s:bg_light})
 call s:h('Error',         {'fg': s:red})
 call s:h('Todo',          {'fg': s:pink})
 
@@ -153,16 +147,16 @@ call s:h('Todo',          {'fg': s:pink})
 
 call s:h('SpecialKey',    {'fg': s:fg})
 if has('nvim')
-  call s:h('NonText',     {'fg': s:table, 'gui': 'bold', 'cterm': 'bold'})
+  call s:h('NonText',     {'fg': s:bg_light, 'gui': 'bold', 'cterm': 'bold'})
   call s:h('Whitespace',  {'fg': s:bg_light})
-  call s:h('EndOfBuffer', {'fg': s:bg})
+  call s:h('EndOfBuffer', {'fg': s:bg_light})
 else
   call s:h('NonText',     {'fg': s:bg_light})
 endif
 call s:h('Directory',     {'fg': s:blue})
 call s:h('ErrorMsg',      {'fg': s:fg_bright, 'bg': s:red})
-call s:h('IncSearch',     {'bg': s:yellow, 'fg': s:bg})
-call s:h('Search',        {'bg': s:yellow, 'fg': s:bg})
+call s:h('IncSearch',     {'fg': s:yellow, 'gui': 'reverse', 'cterm': 'reverse'})
+call s:h('Search',        {'fg': s:yellow, 'gui': 'reverse', 'cterm': 'reverse'})
 call s:h('MoreMsg',       {'fg': s:fg_com})
 hi! link ModeMsg MoreMsg
 
@@ -172,10 +166,10 @@ call s:h('Question',      {'fg': s:green})
 call s:h('StatusLine',    {'fg': s:fg, 'bg': s:bg_light})
 call s:h('Conceal',       {'fg': s:fg})
 call s:h('StatusLineNC',  {'fg': s:fg_com, 'bg': s:bg_light})
-call s:h('VertSplit',     {'bg': s:bg, 'fg': s:bg})
+call s:h('VertSplit',     {'fg': s:bg_light, 'bg': s:bg})
 call s:h('Title',         {'fg': s:fg_bright, 'gui': 'bold,italic', 'cterm': 'bold,italic'})
-call s:h('Visual',        {'bg': s:bg_sel})
-call s:h('VisualNOS',     {'bg': s:bg_sel, 'fg': s:fg_bright})
+call s:h('Visual',        {'fg': s:fg_bright, 'bg': s:fg_com})
+call s:h('VisualNOS',     {'fg': s:fg_bright, 'bg': s:fg_com})
 call s:h('WarningMsg',    {'fg': s:fg_bright, 'bg': s:brown})
 call s:h('WildMenu',      {'fg': s:bg_light, 'bg': s:fg_bright})
 call s:h('Folded',        {'fg': s:fg_light, 'bg': s:bg, 'gui': 'italic', 'cterm': 'italic'})
@@ -218,7 +212,7 @@ call s:h('CursorLine',    {'bg': s:bg_light})
 call s:h('ColorColumn',   {'bg': s:bg_light})
 
 " remainder of syntax highlighting
-call s:h('MatchParen',    {'bg': s:bg_sel})
+call s:h('MatchParen',    {'fg': s:brown, 'gui': 'reverse', 'cterm': 'reverse'})
 call s:h('qfLineNr',      {'fg': s:fg})
 
 " nvim-only groups {{{2
