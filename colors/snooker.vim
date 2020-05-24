@@ -237,6 +237,8 @@ call s:h('BoldItalic',    {'fg': s:fg_light, 'gui': 'bold,italic', 'cterm': 'bol
 
 " Shell {{{2
 hi! link shQuote String
+hi! link zshVariableDef Identifier
+hi! link zshOperator Operator
 
 " Markdown {{{2
 hi! link markdownHeadingDelimiter   Title
