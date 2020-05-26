@@ -212,7 +212,7 @@ call s:h('CursorLine',    {'bg': s:bg_light})
 call s:h('ColorColumn',   {'bg': s:bg_light})
 
 " remainder of syntax highlighting
-call s:h('MatchParen',    {'fg': s:brown, 'gui': 'reverse', 'cterm': 'reverse'})
+call s:h('MatchParen',    {'fg': s:bg_light, 'gui': 'reverse', 'cterm': 'reverse'})
 call s:h('qfLineNr',      {'fg': s:fg})
 
 " nvim-only groups {{{2
