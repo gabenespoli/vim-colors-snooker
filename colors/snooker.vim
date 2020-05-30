@@ -444,7 +444,7 @@ hi link BookmarkAnnotationSign      Statement
 hi link BookmarkLine                Statement
 hi link BookmarkAnnotationLine      Statement
 
-" coc.nvim
+" coc.nvim {{{2
 call s:h('CocErrorSign',            {'fg': s:red})
 call s:h('CocWarningSign',          {'fg': s:brown})
 call s:h('CocInfoSign',             {'fg': s:yellow})
