@@ -172,7 +172,7 @@ call s:h('Visual',        {'fg': s:fg_bright, 'bg': s:fg_com})
 call s:h('VisualNOS',     {'fg': s:fg_bright, 'bg': s:fg_com})
 call s:h('WarningMsg',    {'fg': s:fg_bright, 'bg': s:brown})
 call s:h('WildMenu',      {'fg': s:bg_light, 'bg': s:fg_bright})
-call s:h('Folded',        {'fg': s:fg, 'bg': s:bg_sel, 'gui': 'italic', 'cterm': 'italic'})
+call s:h('Folded',        {'fg': s:fg, 'bg': s:bg_light, 'gui': 'italic', 'cterm': 'italic'})
 call s:h('FoldColumn',    {'fg': s:fg_light, 'bg': s:bg_light})
 call s:h('SignColumn',    {'fg': s:fg})
 
